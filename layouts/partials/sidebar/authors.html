@@ -1,0 +1,26 @@
+<div class="p-4">
+    <h4>Autori</h4>
+
+    <ul class="list-unstyled mb-0">
+        {{ $keys := slice }}
+        {{ range $key, $taxonomy := .Site.Taxonomies.author }}
+            {{ $author := index $.Site.Data.authors $key | markdownify }}
+            {{ $keys = $keys | append $author }}
+        {{ end }}
+
+        {{ $authors := .Site.Taxonomies.author }}
+        {{ range sort $keys "value" "asc" }}
+            {{ $k := . }}
+
+            {{ range $key, $taxonomy := $authors }}
+                {{ $fullName := index $.Site.Data.authors $key | markdownify }}
+                {{ if eq $k $fullName }}
+                    <li>
+                        <!--<img src="/images/author/{{ $key }}.jpeg" width="20px" height="20px">-->
+                        <a href="/author/{{ $key }}/">{{ $fullName }}</a>
+                    </li>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </ul>
+</div>

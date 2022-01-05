@@ -1,0 +1,27 @@
+- id: home
+  hide:
+    - sidebar
+  categories:
+    - id: about
+    - id: article
+      categories:
+        - id: anul-i
+          categories:
+            - 1: 1
+            - 2: 2
+            - 3: 3
+        - id: anul-ii
+          categories:
+            - 1: 1
+            - 2: 2
+            - 3: 3
+        - id: anul-iii
+          categories:
+            - 1: 1
+            - 2: 2
+            - 3: 3
+        - id: anul-iv
+          categories:
+            - 1: 1
+            - 2: 2
+    - id: authors

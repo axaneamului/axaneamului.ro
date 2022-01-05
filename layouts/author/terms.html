@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ partial "breadcrumb.html" (dict "page" . "currentPath" .RelPermalink "i18n" .Site.Data.i18n "categories" .Site.Data.categories) }}
+
+<h1>Autori</h1>
+<section id="authors">
+  <ul>
+    {{ $pages := .Data.Pages }}
+    {{ $keys := slice }}
+    {{ range $pages }}
+      {{ $keys = $keys | append .Params.name }}
+    {{ end }}
+
+    {{ range sort $keys "value" "asc" }}
+      {{ $k := . }}
+
+      {{ range $pages }}
+          {{ $fullName := .Params.name }}
+          {{ if eq $k $fullName }}
+            <li><a href="{{ .Permalink }}">{{ .Params.name }}</a></li>
+          {{ end }}
+      {{ end }}
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

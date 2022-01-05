@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+{{ $tokens := split .Data.Term "-" }}
+{{ $year := index $tokens 0 }}
+{{ $month := index $tokens 1 }}
+{{ $termName := printf "%s %s" (i18n (printf "month.%s" $month)) $year }}
+
+{{ partial "breadcrumb.html" (dict "page" . "currentPath" .RelPermalink "i18n" .Site.Data.i18n "categories" .Site.Data.categories "term" .Data.Term "termName" $termName) }}
+
+<h2>{{ $termName }}</h2>
+
+{{ $pages := .Data.Pages }}
+{{ $keys := slice }}
+{{ range $pages }}
+  {{ $i18nKey := printf "%s.%s" "home" (replace .Dir "/" ".") }}
+  {{ $i18nKey = substr $i18nKey 0 -1 }}
+  {{ $i18nVal := i18n $i18nKey }}
+  {{ $keys = $keys | append (printf "%s - %s" $i18nVal .Title) }}
+{{ end }}
+<ul>
+  {{ range sort $keys "value" "asc" }}
+    {{ $k := . }}
+    {{ range $pages }}
+      {{ $key := printf "%s.%s" "home" (replace .Dir "/" ".") }}
+      {{ $key = substr $key 0 -1 }}
+      {{ $key := i18n $key }}
+      {{ $key := printf "%s - %s" $key .Title }}
+
+      {{ if eq $k $key }}
+        <li><a href="{{ .Permalink }}">{{ $key }}</a></li>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</ul>
+{{ end }}

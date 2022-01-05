@@ -1,0 +1,179 @@
+- id: home
+  translation: Acasă
+
+- id: home.about
+  translation: Despre
+
+- id: home.archives
+  translation: Arhive
+
+- id: home.article
+  translation: Articole
+
+- id: home.article.anul-i
+  translation: Axa anul I
+- id: home.article.anul-i.1
+  translation: Axa 1
+- id: home.article.anul-i.2
+  translation: Axa 2
+- id: home.article.anul-i.3
+  translation: Axa 3
+- id: home.article.anul-i.4-5
+  translation: Axa 4 – 5
+- id: home.article.anul-i.6
+  translation: Axa 6
+- id: home.article.anul-i.7
+  translation: Axa 7
+- id: home.article.anul-i.8
+  translation: Axa 8
+- id: home.article.anul-i.9
+  translation: Axa 9
+- id: home.article.anul-i.10
+  translation: Axa 10
+- id: home.article.anul-i.11
+  translation: Axa 11
+- id: home.article.anul-i.12
+  translation: Axa 12
+- id: home.article.anul-i.13
+  translation: Axa 13
+
+- id: home.article.anul-ii
+  translation: Axa anul II
+- id: home.article.anul-ii.14
+  translation: Axa 14
+- id: home.article.anul-ii.15
+  translation: Axa 15
+- id: home.article.anul-ii.16
+  translation: Axa 16
+- id: home.article.anul-ii.17
+  translation: Axa 17
+- id: home.article.anul-ii.18
+  translation: Axa 18
+- id: home.article.anul-ii.19
+  translation: Axa 19
+- id: home.article.anul-ii.20
+  translation: Axa 20
+- id: home.article.anul-ii.21
+  translation: Axa 21
+- id: home.article.anul-ii.22
+  translation: Axa 22
+- id: home.article.anul-ii.23
+  translation: Axa 23
+- id: home.article.anul-ii.24
+  translation: Axa 24
+- id: home.article.anul-ii.25
+  translation: Axa 25
+- id: home.article.anul-ii.26
+  translation: Axa 26
+- id: home.article.anul-ii.27
+  translation: Axa 27
+- id: home.article.anul-ii.28
+  translation: Axa 28
+- id: home.article.anul-ii.29
+  translation: Axa 29
+- id: home.article.anul-ii.30
+  translation: Axa 30
+
+- id: home.article.anul-iii
+  translation: Axa anul III
+- id: home.article.anul-iii.31
+  translation: Axa 31
+- id: home.article.anul-iii.32
+  translation: Axa 32
+- id: home.article.anul-iii.33
+  translation: Axa 33
+- id: home.article.anul-iii.34
+  translation: Axa 34
+- id: home.article.anul-iii.35
+  translation: Axa 35
+- id: home.article.anul-iii.36
+  translation: Axa 36
+- id: home.article.anul-iii.37
+  translation: Axa 37
+- id: home.article.anul-iii.38
+  translation: Axa 38
+- id: home.article.anul-iii.39
+  translation: Axa 39
+- id: home.article.anul-iii.40
+  translation: Axa 40
+- id: home.article.anul-iii.41
+  translation: Axa 41
+- id: home.article.anul-iii.42
+  translation: Axa 42
+- id: home.article.anul-iii.43
+  translation: Axa 43
+- id: home.article.anul-iii.44
+  translation: Axa 44
+- id: home.article.anul-iii.45
+  translation: Axa 45
+- id: home.article.anul-iii.46
+  translation: Axa 46
+- id: home.article.anul-iii.47
+  translation: Axa 47
+- id: home.article.anul-iii.48
+  translation: Axa 48
+- id: home.article.anul-iii.49
+  translation: Axa 49
+- id: home.article.anul-iii.50
+  translation: Axa 50
+
+- id: home.article.anul-iV
+  translation: Axa anul IV
+- id: home.article.anul-iV.51
+  translation: Axa 51
+- id: home.article.anul-iV.52
+  translation: Axa 52
+
+
+- id: home.author
+  translation: Autori
+
+- id: month.01
+  translation: Ianuarie
+- id: month.02
+  translation: Februarie
+- id: month.03
+  translation: Martie
+- id: month.04
+  translation: Aprilie
+- id: month.05
+  translation: Mai
+- id: month.06
+  translation: Iunie
+- id: month.07
+  translation: Iulie
+- id: month.08
+  translation: August
+- id: month.09
+  translation: Septembrie
+- id: month.10
+  translation: Octombrie
+- id: month.11
+  translation: Noiembrie
+- id: month.12
+  translation: Decembrie
+
+- id: January
+  translation: Ianuarie
+- id: February
+  translation: Februarie
+- id: March
+  translation: Martie
+- id: April
+  translation: Aprilie
+- id: May
+  translation: Mai
+- id: June
+  translation: Iunie
+- id: July
+  translation: Iulie
+- id: August
+  translation: August
+- id: September
+  translation: Septembrie
+- id: October
+  translation: Octombrie
+- id: November
+  translation: Noiembrie
+- id: December
+  translation: Decembrie

@@ -1,0 +1,65 @@
+{{ define "main" }}
+    <div class="blog-post-list">
+        {{ partial "breadcrumb.html" (dict "page" . "currentPath" .RelPermalink "i18n" .Site.Data.i18n "categories" .Site.Data.categories) }}
+
+        {{ if (or (eq .RelPermalink "/") (hasPrefix .RelPermalink "/article/")) }}
+            {{ template "articles" (dict "pages" .Pages "currentPath" .RelPermalink "authorI18N" $.Site.Data.authors) }}
+<!--            {{ template "articles" (dict "pages" .Paginator.Pages "currentPath" .RelPermalink "authorI18N" $.Site.Data.authors) }}-->
+<!--            {{ template "_internal/pagination.html" . }}-->
+        {{ end }}
+    </div>
+{{ end }}
+
+{{ define "articles" }}
+    {{ $currentPath := .currentPath }}
+    {{ $authorI18N := .authorI18N }}
+
+    {{ range .pages }}
+        {{ if .IsPage }}
+            {{ if eq .Type "article" }}
+                <div class="blog-post card mb-3">
+                    <div class="row no-gutters">
+                        {{ $img := "" }}
+                        {{ $imgDir := printf "/static/images/%s%s/" .File.Dir .File.BaseFileName }}
+                        {{ if fileExists $imgDir }}
+                            {{ $imgDir := printf "/static/images/%s%s" .File.Dir .File.BaseFileName }}{{ $count := 0 }}
+                            {{ range (readDir $imgDir) }}
+                                {{ if in .Name "-preview.jpg" }}
+                                    {{ $count = add $count 1 }}
+                                {{ end }}
+                            {{ end }}
+
+                            {{ $imgDir := printf "/images/%s%s" .File.Dir .File.BaseFileName }}
+
+                            {{ if gt $count 0 }}
+                                {{ $img = printf "%s/0-preview.jpg" $imgDir }}
+                            {{ end }}
+                        {{ end }}
+                        {{ if gt (len $img) 0 }}
+                            <div class="col-md-9">
+                        {{ else }}
+                            <div class="col-md-12">
+                        {{ end }}
+                            <div class="card-body bog-post-card-body">
+                                <h4 class="card-title blog-post-title"><a href="{{ .Permalink }}" class="text-dark">{{ .Title }}</a></h4>
+                                {{ $author := .Params.author }}
+                                {{ $fullName := index $authorI18N $author | markdownify }}
+
+                                <p class="card-text blog-post-meta text-muted"><a href="/author/{{ $author }}" class="text-muted"><strong>{{ $fullName }}</strong></a>, {{ .Date.Day }} {{ i18n .Date.Month }} {{ .Date.Year }}</p>
+                                <p class="card-text">{{ .Summary | plainify }}…</p>
+                                <p class="mb-0"><a href="{{ .Permalink }}">Continuă să citești…</a></p>
+                            </div>
+                        </div>
+                        {{ if gt (len $img) 0 }}
+                            <div class="col-md-3">
+                                <a href="{{ .Permalink }}"><img src="{{ $img }}" class="card-img blog-post-image" alt="AXA"></a>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+
+        {{ template "articles" (dict "pages" .Pages "currentPath" $currentPath "authorI18N" $authorI18N) }}
+    {{ end }}
+{{ end }}

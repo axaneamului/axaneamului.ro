@@ -1,0 +1,52 @@
+#mediaTypes:
+#  application/ld+json:
+#    suffixes: [ "seo" ]
+
+#sitemap:
+#  changefreq: monthly
+#  filename: sitemap.xml
+#  priority: 0.5
+
+outputFormats:
+  seo:
+    isHTML: false
+    isPlainText: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+baseurl: https://axa.ro/
+enableRobotsTXT: true
+languageCode: ro
+DefaultContentLanguage: ro
+disableLanguages:
+  - fr
+  - en
+
+title: AXA
+
+params:
+  version: 1.0.5
+  event:
+    passedYears: 75
+  social:
+    email: contact@axa.ro
+    phone: "0745254657"
+  copyright: AXA
+
+languages:
+  ro:
+    lang: ro
+    languageName: Română
+    weight: 1
+    params:
+      about: AXA
+      description: "© AXA - Revistă de oceanografie ortodoxă - februarie 2008 - martie 2012"
+
+taxonomies:
+  archive: archives
+  author: author
+  category: categories
+  tag: tags

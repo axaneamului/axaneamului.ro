@@ -1,0 +1,22 @@
+// https://canonicalized.com/local-font/
+
+//@font-face { font-family: 'Dancing Script'; font-style: normal; font-weight: 400; src: url('/fonts/dancing-script/dancing-script-v11-latin-regular.eot'); src: local('Dancing Script Regular'), local('DancingScript-Regular'), url('/fonts/dancing-script/dancing-script-v11-latin-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/dancing-script/dancing-script-v11-latin-regular.woff2') format('woff2'), url('/fonts/dancing-script/dancing-script-v11-latin-regular.woff') format('woff'), url('/fonts/dancing-script/dancing-script-v11-latin-regular.ttf') format('truetype'), url('/fonts/dancing-script/dancing-script-v11-latin-regular.svg#DancingScript') format('svg');  }
+//
+//@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 300; src: url('/fonts/roboto/roboto-v20-latin-300.eot'); src: local('Roboto Light'), local('Roboto-Light'), url('/fonts/roboto/roboto-v20-latin-300.eot?#iefix') format('embedded-opentype'), url('/fonts/roboto/roboto-v20-latin-300.woff2') format('woff2'), url('/fonts/roboto/roboto-v20-latin-300.woff') format('woff'), url('/fonts/roboto/roboto-v20-latin-300.ttf') format('truetype'), url('/fonts/roboto/roboto-v20-latin-300.svg#Roboto') format('svg'); }
+//@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; src: url('/fonts/roboto/roboto-v20-latin-regular.eot'); src: local('Roboto'), local('Roboto-Regular'), url('/fonts/roboto/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/roboto/roboto-v20-latin-regular.woff2') format('woff2'), url('/fonts/roboto/roboto-v20-latin-regular.woff') format('woff'), url('/fonts/roboto/roboto-v20-latin-regular.ttf') format('truetype'), url('/fonts/roboto/roboto-v20-latin-regular.svg#Roboto') format('svg'); }
+//@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; src: url('/fonts/roboto/roboto-v20-latin-700.eot'); src: local('Roboto Bold'), local('Roboto-Bold'), url('/fonts/roboto/roboto-v20-latin-700.eot?#iefix') format('embedded-opentype'), url('/fonts/roboto/roboto-v20-latin-700.woff2') format('woff2'), url('/fonts/roboto/roboto-v20-latin-700.woff') format('woff'), url('/fonts/roboto/roboto-v20-latin-700.ttf') format('truetype'), url('/fonts/roboto/roboto-v20-latin-700.svg#Roboto') format('svg'); }
+
+// do not forget to change $fa-font-path ($fa-font-path: "/fonts/font-awesome" !default;) in this file:
+@import "font-awesome/variables";
+@import "font-awesome/mixins";
+@import "font-awesome/path";
+@import "font-awesome/core";
+@import "font-awesome/larger";
+//@import "font-awesome/fixed-width";
+//@import "font-awesome/list";
+//@import "font-awesome/bordered-pulled";
+//@import "font-awesome/animated";
+//@import "font-awesome/rotated-flipped";
+@import "font-awesome/stacked";
+@import "font-awesome/icons";
+@import "font-awesome/screen-reader";

@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Site.BaseURL }}"
+    },
+    "articleSection": "{{ .Section }}",
+    "name": "{{ .Title }}",
+    "headline": "{{ .Title }}",
+    "description": "{{ if .Description }}{{ replace (.Description | markdownify) "\n" " " }}{{ else }}{{if .IsPage}}{{ replace (.Summary | markdownify) "\n" " " }}{{ end }}{{ end }}",
+    "inLanguage": "en-US",
+    "author": "axa",
+    "creator": "axa",
+    "publisher": "axa",
+    "accountablePerson": "axa",
+    "copyrightHolder": "axa",
+    "copyrightYear": "{{ now.Format "2006" }}",
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
+    "dateModified": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
+    "url": "{{ replace .Permalink "\\" "" }}",
+    "wordCount": "{{ .WordCount }}",
+    "keywords": [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"axa" ]
+}
+</script>

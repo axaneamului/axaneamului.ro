@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ partial "breadcrumb.html" (dict "page" . "currentPath" .RelPermalink "i18n" .Site.Data.i18n "categories" .Site.Data.categories) }}
+
+<h2>Arhive</h2>
+<section id="archives">
+    <ul>
+        {{ $keys := slice }}
+        {{ range $key, $taxonomy := .Site.Taxonomies.archives }}
+            {{ $keys = $keys | append $key }}
+        {{ end }}
+
+        {{ $archives := .Site.Taxonomies.archives }}
+        {{ range sort $keys "value" "desc" }}
+            {{ $k := . }}
+
+            {{ range $key, $taxonomy := $archives }}
+                {{ if eq $k $key }}
+                    {{ $tokens := split $key "-" }}
+                    {{ $year := index $tokens 0 }}
+                    {{ $month := index $tokens 1 }}
+                    <li><a href="/archives/{{ $key }}">{{ i18n (printf "month.%s" $month) }} {{ $year }}</a></li>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </ul>
+</section>
+{{ end }}

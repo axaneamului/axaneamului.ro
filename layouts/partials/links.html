@@ -1,0 +1,30 @@
+<link rel="icon" type="image/png" href="{{ "/images/favicon.png" | absURL }}">
+<link rel="shortcut icon" type="image/png" href="{{ "/images/favicon.png" | absURL }}">
+<link rel="apple-touch-icon" type="image/png" href="{{ "/images/favicon.png" | absURL }}">
+{{ $scss := resources.Get "sass/main.scss" }}
+{{ $style := $scss | resources.ToCSS  }}
+<link href="//fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ `
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+` | safeHTML }}
+
+<style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+</style>

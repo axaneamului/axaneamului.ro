@@ -17,7 +17,8 @@ markup:
     renderer:
       unsafe: true
 
-baseurl: https://axa.ro/
+#baseurl: https://axaneamului.ro/
+baseurl: https://axaneamului.github.io/
 enableRobotsTXT: true
 languageCode: ro
 DefaultContentLanguage: ro

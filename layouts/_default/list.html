@@ -45,7 +45,7 @@
                                 {{ $author := .Params.author }}
                                 {{ $fullName := index $authorI18N $author | markdownify }}
 
-                                <p class="card-text blog-post-meta text-muted"><a href="/author/{{ $author }}" class="text-muted"><strong>{{ $fullName }}</strong></a>, {{ .Date.Day }} {{ i18n .Date.Month }} {{ .Date.Year }}</p>
+                                <p class="card-text blog-post-meta text-muted">Scris de <a href="/author/{{ $author }}" class="text-muted"><strong>{{ $fullName }}</strong></a>, publicat la {{ .Date.Day }} {{ i18n .Date.Month }} {{ .Date.Year }}</p>
                                 <p class="card-text">{{ .Summary | plainify }}…</p>
                                 <p class="mb-0"><a href="{{ .Permalink }}">Continuă să citești…</a></p>
                             </div>

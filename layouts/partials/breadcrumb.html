@@ -16,6 +16,7 @@
 
                 {{ if not (in $category.hide "breadcrumb") }}
                     {{ $itemName := i18n (replace (path.Join $homeCategory.id $itemPath) "/" ".") }}
+                    
                     {{ if gt (len $itemName) 0 }}
                         <li class="breadcrumb-item">
                             <a href="{{ $itemPath }}">{{ $itemName }}</a>

@@ -17,8 +17,8 @@ markup:
     renderer:
       unsafe: true
 
-#baseurl: https://axaneamului.ro/
-baseurl: https://axaneamului.github.io/
+baseurl: https://axaneamului.ro/
+#baseurl: https://axaneamului.github.io/
 enableRobotsTXT: true
 languageCode: ro
 DefaultContentLanguage: ro

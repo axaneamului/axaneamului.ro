@@ -1,0 +1,80 @@
+{{ define "main" }}
+{{ partial "breadcrumb.html" (dict "page" . "currentPath" .RelPermalink "i18n" .Site.Data.i18n "categories" .Site.Data.categories "i18nTerm" $.Site.Data.authors "term" .Data.Term "termName" .Params.name) }}
+
+{{ if .Params.lastDir }}
+  {{ $RelPermalink := .RelPermalink }}
+  {{ range sort .Pages ".Params.position" "asc" }}
+      {{ template "article" . }}
+  {{ end }}
+{{ else }}
+  {{ $key := replace .RelPermalink "/" "." }}
+  {{ $key := printf "home%s" $key }}
+  {{ $key := substr $key 0 -1 }}
+  {{ $key := i18n $key }}
+  <h2>{{ $key }}</h2>
+
+  <ul>
+    {{ $RelPermalink := .RelPermalink }}
+    {{ range sort .Pages ".Params.position" "asc" }}
+      {{ $key := printf "%s.%s" "home" (replace .Dir "/" ".") }}
+      {{ $key = substr $key 0 -1 }}
+      {{ $key := i18n $key }}
+      <li><a href="{{ .Permalink }}">{{ $key }}</a></li>
+    {{ end }}
+  </ul>
+{{ end }}
+
+{{ end }}
+
+{{ define "article" }}
+  <div class="blog-post card mb-3">
+    <div class="row no-gutters">
+      {{ $img := "" }}
+      {{ $imgDir := printf "/static/images/%s%s/" .File.Dir .File.BaseFileName }}
+      {{ if fileExists $imgDir }}
+          {{ $imgDir := printf "/static/images/%s%s" .File.Dir .File.BaseFileName }}{{ $count := 0 }}
+          {{ range (readDir $imgDir) }}
+              {{ if in .Name "-preview.jpg" }}
+                  {{ $count = add $count 1 }}
+              {{ end }}
+          {{ end }}
+
+          {{ $imgDir := printf "/images/%s%s" .File.Dir .File.BaseFileName }}
+
+          {{ if gt $count 0 }}
+              {{ $img = printf "%s/0-preview.jpg" $imgDir }}
+          {{ end }}
+      {{ end }}
+      {{ if gt (len $img) 0 }}
+          <div class="col-md-9">
+      {{ else }}
+          <div class="col-md-12">
+      {{ end }}
+          <div class="card-body bog-post-card-body">
+              <h4 class="card-title blog-post-title"><a href="{{ .Permalink }}" class="text-dark">{{ .Title }}</a></h4>
+              {{ $author := .Params.author }}
+              {{ $fullName := index $.Site.Data.authors $author | markdownify }}
+
+              <p class="card-text blog-post-meta text-muted">
+                  {{- if and (default true (default .Site.Params.readingTime .Params.readingTime)) -}}
+                    <span class="post-reading-time">
+                      {{ .ReadingTime }}
+                    </span>
+                  {{- end -}}
+                  Scris de
+                  <a href="/author/{{ $author }}" class="text-muted"><strong>{{ $fullName }}</strong></a>,
+                  publicat la
+                  <a href="/archives/{{ .Date.Year }}-{{ dateFormat "01" .Date }}" class="text-muted"><strong>{{ .Date.Day }} {{ i18n .Date.Month }} {{ .Date.Year }}</strong></a>
+              </p>
+              <p class="card-text">{{ .Summary | plainify }}…</p>
+              <p class="mb-0"><a href="{{ .Permalink }}">Continuă să citești…</a></p>
+          </div>
+      </div>
+      {{ if gt (len $img) 0 }}
+          <div class="col-md-3">
+              <a href="{{ .Permalink }}"><img src="{{ $img }}" class="card-img blog-post-image" alt="AXA"></a>
+          </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

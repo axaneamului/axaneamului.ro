@@ -2,11 +2,11 @@
     <div class="blog-post-list">
         {{ partial "breadcrumb.html" (dict "page" . "currentPath" .RelPermalink "i18n" .Site.Data.i18n "categories" .Site.Data.categories) }}
 
-        {{ if (or (eq .RelPermalink "/") (hasPrefix .RelPermalink "/article/")) }}
-            {{ template "articles" (dict "pages" .Pages "currentPath" .RelPermalink "authorI18N" $.Site.Data.authors) }}
+<!--        {{ if (or (eq .RelPermalink "/") (hasPrefix .RelPermalink "/article/")) }}-->
+<!--            {{ template "articles" (dict "pages" .Pages "currentPath" .RelPermalink "authorI18N" $.Site.Data.authors) }}-->
 <!--            {{ template "articles" (dict "pages" .Paginator.Pages "currentPath" .RelPermalink "authorI18N" $.Site.Data.authors) }}-->
 <!--            {{ template "_internal/pagination.html" . }}-->
-        {{ end }}
+<!--        {{ end }}-->
     </div>
 {{ end }}
 

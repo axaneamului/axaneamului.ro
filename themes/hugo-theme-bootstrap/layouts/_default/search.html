@@ -28,7 +28,8 @@
     </div>
     <div class="card-body">
       <div class="post-meta mb-3">
-        <span class="post-date">{{ printf "{{date}}" }}</span>
+        <span class="post-author">Scris de {{ printf "{{author}}" }}</span>
+        <span class="post-date">Publicat la {{ printf "{{date}}" }}</span>
         {{- $baseURL := absLangURL "" -}}
         {{- $placeholder := "{{#url}}{{.}}{{/url}}" -}}
         {{- range slice "series" "categories" "tags" -}}

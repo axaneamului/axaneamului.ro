@@ -3,6 +3,9 @@
 {{- range .Site.RegularPages -}}
     {{- $date := .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
     {{- $title := .Title }}
+    {{- $author_key := (index .Params.Authors 0) -}}
+    {{- $author_val := index $.Site.Data.authors $author_key -}}
+    {{- $authors := .Params.Authors }}
     {{- if $titleCase -}}
         {{- $title = title $title -}}
     {{- end -}}
@@ -16,7 +19,7 @@
         {{- $img = $imgFile | absURL -}}
       {{- end -}}
     {{- end -}}
-    {{- $item := (dict "title" $title "tags" .Params.tags "categories" .Params.categories "series" .Params.series "content" .Plain "permalink" .Permalink "date" $date "img" $img) -}}
+    {{- $item := (dict "title" $title "author" $author_val "tags" .Params.tags "categories" .Params.categories "series" .Params.series "content" .Plain "permalink" .Permalink "date" $date "img" $img) -}}
     {{- $.Scratch.Add "index" $item -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | uniq | jsonify -}}

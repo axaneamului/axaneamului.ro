@@ -19,7 +19,7 @@ for fullpath in $(find ~/Desktop/src/ -name '*.jpg'); do
 #    convert -quality 10% $fullpath $dir$base-preview.$ext
 #    convert -quality 30% $fullpath $dir$base-preview.$ext
 #    convert -resize 20% -quality 25% $fullpath $dir$base-preview.$ext
-    convert -resize 60% $fullpath $dir$base-preview.$ext
+    convert -resize 50% $fullpath $dir$base-preview.$ext
 #    convert -resize 22% -quality 50% $fullpath $dir$base-preview.$ext
 
 #    convert $fullpath -gravity NorthWest -pointsize 128 -font Roboto-Bold -fill "rgba(0,0,0,0.5)" -gravity center -annotate +0+0 "axa.ro" $fullpath

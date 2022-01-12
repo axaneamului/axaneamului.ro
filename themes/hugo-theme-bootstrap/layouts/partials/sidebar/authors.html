@@ -1,0 +1,19 @@
+{{- $count := default 5 .Site.Params.recentPostCount -}}
+{{- if $count -}}
+<section class="recent-authors row card component">
+  <div class="card-header">
+    <h2 class="card-title">{{ T "authors" }}</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list">
+    {{- range site.RegularPages -}}
+      {{ if eq .Type "author" }}
+        <li>
+          <a href="{{ .Permalink }}">{{ partial "helpers/title" . }}</a>
+        </li>
+      {{- end -}}
+    {{- end -}}
+    </ul>
+  </div>
+</section>
+{{- end -}}

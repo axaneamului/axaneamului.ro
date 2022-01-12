@@ -1,0 +1,44 @@
+{{- $key := .key -}}
+{{- $value := (index .Site.Taxonomies .key) -}}
+{{- $countPosts := default false $.Site.Params.countTaxonomyPosts -}}
+{{- $countParams := dict "categories" "categoryCount" "tags" "tagCount" "series" "seriesCount" -}}
+{{- $param := default "" (index $countParams $key) -}}
+{{- $taxonomyCount := default (default 10 .defaultTaxonomyCount) ($.Site.Param $param) -}}
+{{- $sortAlphabetical := default false .sortAlphabetical -}}
+{{- if $taxonomyCount -}}
+  {{- $taxonomy := (cond $sortAlphabetical $value.Alphabetical $value.ByCount) -}}
+  {{- $showSeeAll := true -}}
+  {{- with $taxonomy -}}
+    <section class="{{ $key }}-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="{{ absLangURL (urlize $key) }}">{{ T $key }}</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2">
+        {{- range $idx, $taxonomy := . -}}
+          {{- if lt $idx $taxonomyCount -}}
+            <a href="{{ $taxonomy.Page.Permalink }}" class="badge rounded post-taxonomy" title="{{ $taxonomy.Page.Title }}">
+            {{- if eq $taxonomy.Page.Type "author" -}}
+              {{ index $.Site.Data.authors $taxonomy.Term }}
+            {{- else -}}
+              {{ $taxonomy.Page.Title }}
+            {{- end -}}
+            {{- if $countPosts -}}
+              <span class="badge badge-sm rounded-pill text-white bg-accent ms-1">{{ $taxonomy.Count }}</span>
+            {{- end -}}
+          </a>
+          {{- else if $showSeeAll -}}
+            {{- $showSeeAll = false -}}
+            {{- $title := T (printf "show_all_taxonomies_%s" $key) -}}
+<!--            <p class="text-end"><a class="btn btn-sm btn-primary dms-2" href="{{ absLangURL (urlize $key) }}">{{ $title }}</a></p>-->
+<!--            <p class="text-end"><a class="btn btn-sm btn-primary dms-2" href="{{ absLangURL (urlize $key) }}">&hellip;</a></p>-->
+            <a href="{{ absLangURL (urlize $key) }}" class="badge rounded post-taxonomy" title="{{ $title }}">&hellip;</a>
+          {{- end -}}
+        {{- end -}}
+        </div>
+      </div>
+    </section>
+  {{- end -}}
+{{- end -}}

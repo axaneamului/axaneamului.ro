@@ -1,0 +1,10 @@
+{
+    "title": "Hugo",
+    "weight": 2,
+    "questions": [
+        {
+            "question": "Ce este Hugo?",
+            "answer": "Hugo este un generator de site-uri static rapid și modern, scris în Go și conceput pentru a face din nou distracție crearea de site-uri web."
+        }
+    ]
+}

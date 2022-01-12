@@ -1,0 +1,7 @@
+{{- $year := .Date.Year -}}
+{{- $month_as_number := .Date.Format "01" -}}
+{{- $month_name := i18n (printf "%s" (.Date.Format "January")) -}}
+{{- $day := .Date.Format "2" -}}
+
+{{ $day }} {{ $month_name }} {{ $year }}
+<!--{{ .Date | time.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) }}-->

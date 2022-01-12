@@ -1,0 +1,10 @@
+{{- $key := $.Site.Params.post.excerpt -}}
+{{- $content :=  "" -}}
+{{- if eq $key "description" -}}
+  {{- $content = .Description | plainify -}}
+{{- else -}}
+  {{- $content = .Summary | plainify -}}
+{{- end -}}
+{{- $maxLength := default 320 $.Site.Params.post.excerptMaxLength -}}
+{{- $readMore := printf "...<p class=\"text-end\"><a class=\"btn btn-sm btn-primary ms-2\" href=\"%s\">%s</a></p>" .Permalink (i18n "read_more") | safeHTML -}}
+{{- $content | truncate $maxLength $readMore -}}

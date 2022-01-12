@@ -1,0 +1,13 @@
+{{ define "content" }}
+<div class="col-lg-8">
+  <div class="container">
+    {{- partial "breadcrumb" . -}}
+    {{- if (eq .Type "author") -}}
+      {{- partial "author" . -}}
+    {{- else -}}
+      {{- partial "post" . -}}
+    {{- end -}}
+  </div>
+</div>
+{{- partial "sidebar" . -}}
+{{ end }}

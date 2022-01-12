@@ -1,0 +1,18 @@
+{{- partial "sidebar/taxonomy/taxonomy" (dict "key" "series" "value" (index .Site.Taxonomies "series") "Site" .Site) -}}
+{{- partial "sidebar/taxonomy/taxonomy" (dict "key" "authors" "value" (index .Site.Taxonomies "authors") "Site" .Site "defaultTaxonomyCount" 100 "sortAlphabetical" true) -}}
+{{- partial "sidebar/taxonomy/taxonomy" (dict "key" "categories" "value" (index .Site.Taxonomies "categories") "Site" .Site) -}}
+{{- partial "sidebar/taxonomy/taxonomy" (dict "key" "tags" "value" (index .Site.Taxonomies "tags") "Site" .Site) -}}
+
+<!--
+{{- $site := .Site -}}
+{{- $keys := slice "series" "authors" "categories" "tags" -}}
+{{- range $keys -}}
+  {{- partial "sidebar/taxonomy/taxonomy" (dict "key" . "value" (index $site.Taxonomies .) "Site" $site) -}}
+{{- end -}}
+-->
+
+<!--
+{{- range $key, $value := $site.Taxonomies -}}
+  {{- partial "sidebar/taxonomy/taxonomy" (dict "key" $key "value" $value "Site" $site) -}}
+{{- end -}}
+-->

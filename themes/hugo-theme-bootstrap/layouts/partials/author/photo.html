@@ -1,0 +1,8 @@
+{{- $author_key := path.Base .File.Dir -}}
+{{- $author_val := index $.Site.Data.authors $author_key -}}
+{{- $photo := "images/0.jpg" -}}
+{{- $photo = printf "%s%s" .File.Dir $photo -}}
+
+{{- if fileExists $photo -}}
+<img class="img-fluid" src="{{ absLangURL $photo }}" alt="{{ $author_val }}" loading="lazy" width="100" height="100">
+{{- end -}}

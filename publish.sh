@@ -7,7 +7,7 @@ find ../axaneamului.github.io/ -mindepth 1 -maxdepth 1 -type d -not -path '*/\.*
 find ../axaneamului.github.io/ -mindepth 1 -maxdepth 1 -type f -name '*ml' -exec rm -r {} \;
 
 rm -rf public
-hugo
+hugo --environment production
 yes | cp -f -r public/. ../axaneamului.github.io/
 cd ../axaneamului.github.io/
 

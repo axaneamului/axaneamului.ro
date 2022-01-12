@@ -1,0 +1,19 @@
+<!--https://gohugohq.com/howto/hugo-dateformat/-->
+
+<section class="recent-authors row card component">
+  <div class="card-header">
+    <h2 class="card-title"><a href="{{ absLangURL "/archives" }}">{{ T "archives" }}</a></h2>
+  </div>
+  <div class="card-body">
+    <div class="py-2">
+      {{- range .Site.Taxonomies.year.Alphabetical.Reverse -}}
+        {{- $yearUrl := absLangURL (printf "/archives/%s/" .Name) -}}
+        <a href="{{ $yearUrl }}" class="badge rounded post-taxonomy" title="{{ .Name }}">{{ .Name }}
+          <span class="badge badge-sm rounded-pill text-white bg-accent ms-1">{{ .Count }}</span>
+        </a>
+      {{- end -}}
+      {{- $title := T "show_all_taxonomies_archives" -}}
+      <a href="{{ absLangURL "/archives" }}" class="badge rounded post-taxonomy" title="{{ $title }}">&hellip;</a>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,186 @@
+[404_title]
+other = "Pagina nu a fost gasită."
+
+[404_info]
+other = "Se pare că nu putem găsi pagina pe care o cauți."
+
+[about_me]
+other = "Despre mine"
+
+[alipay]
+other = "Alipay"
+
+[archives]
+other = "Arhive"
+
+[button_copy_url]
+other = "Copiază calea"
+
+[button_reload]
+other = "Reîncarcă"
+
+[button_social_share]
+other = "Distribuie"
+
+[button_submit]
+other = "Trimite"
+
+[buy_me_a_coffee]
+other = "Cumpără-mi o cafea"
+
+[categories]
+other = "Categorii"
+
+[color_blue]
+other = "Albastru"
+
+[color_blue_gray]
+other = "Blue Gray"
+
+[color_brown]
+other = "Maro"
+
+[color_cyan]
+other = "Cyan"
+
+[color_green]
+other = "Verde"
+
+[color_indigo]
+other = "Indigo"
+
+[color_orange]
+other = "Portocaliu"
+
+[color_pink]
+other = "Roz"
+
+[color_purple]
+other = "Violet"
+
+[color_red]
+other = "Roșu"
+
+[color_teal]
+other = "Teal"
+
+[color_yellow]
+other = "Galben"
+
+[comments]
+other = "Comentarii"
+
+[contact_name]
+other = "Nume"
+
+[contact_email]
+other = "E-mail"
+
+[contact_email_help]
+other = "Nu vom divulga niciodată e-mailul dvs."
+
+[contact_file]
+other = "Fișier"
+
+[contact_subject]
+other = "Subiect"
+
+[contact_message]
+other = "Mesaj"
+
+[copyright]
+other = "Drepturi de autor "
+
+[featured_posts]
+other = "Articole recomandate"
+
+[font_size]
+other = "Dimensiune Font"
+
+[go_back]
+other = "Mergi înapoi"
+
+[home]
+other = "Acasă"
+
+[language]
+other = "Limbă"
+
+[liberapay]
+other = "Liberapay"
+
+[load_more]
+other = "Încarcă mai mult"
+
+[mode]
+other = "Mod"
+
+[offline_title]
+other = "Ești offline."
+
+[offline_info]
+other = "Se pare că există o problemă cu conexiunea dvs. Vă rugăm să verificați starea rețelei dvs."
+
+[pagination_title]
+other = "Pagina {{ .PageNumber }}"
+
+[palette]
+other = "Paletă"
+
+[patreon]
+other = "Patreon"
+
+[paypal]
+other = "Paypal"
+
+[post_count]
+one = "{{ .Count }} articol în total"
+other = "{{ .Count }} articole în total"
+
+[post_date]
+other = "creat la {{ .createdOn }}{{ with .updatedOn }}, modificat la {{ . }}{{ end }}."
+
+[read_more]
+other = "Citește mai mult"
+
+[reading_time]
+other = "se citește în {{ .ReadingTime }} minute"
+
+[authors]
+other = "Autori"
+
+[recent_posts]
+other = "Articole recente"
+
+[related_posts]
+other = "Articole asemănatoare"
+
+[search]
+other = "Caută"
+
+[search_missing_keywords]
+other = "Vă rugăm să introduceți cuvintele cheie de căutare."
+
+[search_no_results]
+other = "Nici un rezultat găsit."
+
+[search_stat]
+other = "S-au găsit {{ .Total }} rezultate."
+
+[series]
+other = "Serii"
+
+[settings]
+other = "Setări"
+
+[table_of_contents]
+other = "Cuprins"
+
+[tags]
+other = "Etichete"
+
+[try_again]
+other = "Încearcă din nou"
+
+[wechat]
+other = "WeChat"

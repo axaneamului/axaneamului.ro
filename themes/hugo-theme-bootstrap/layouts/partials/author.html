@@ -1,0 +1,28 @@
+<article class="row card component mb-4 post">
+  {{- partial "post/panel" . -}}
+  <div class="card-header ">
+    {{ $author_key := path.Base .File.Dir }}
+    <h1 class="card-title post-title">{{ index $.Site.Data.authors $author_key }}</h1>
+  </div>
+  <div class="card-body">
+    {{- partial "author/meta" . -}}
+    {{- partial "hooks/content-begin" . -}}
+    {{- partial "post/share" . -}}
+    {{- partial "post/toc" . -}}
+    <div class="post-content mb-3">
+      {{- partial "author/photo" . -}}
+      {{- .Content -}}
+    </div>
+    {{- partial "post/reward" . -}}
+    {{- partial "hooks/content-end" . -}}
+<!--    {{- partial "post/copyright/index" . -}}-->
+  </div>
+  {{- if not (eq .Type "author") -}}
+  <div class="card-footer">
+      {{- partial "post/nav" . -}}
+  </div>
+  {{- end -}}
+</article>
+<!--{{- partial "post/related-posts" . -}}-->
+<!--{{- partial "author/articles" . -}}-->
+{{- partial "post/comments" . -}}

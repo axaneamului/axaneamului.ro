@@ -1,0 +1,32 @@
+{{- if and (default true .Site.Params.breadcrumb) (default true .Params.breadcrumb) -}}
+  {{- $titleCase := default false $.Site.Params.titleCase -}}
+  {{- $i18nAuthors := $.Site.Data.authors -}}
+  <nav class="row card component" aria-label="breadcrumb">
+    <div class="card-body">
+      <ol class="breadcrumb ">
+        {{- template "breadcrumbnav" (dict "p1" . "p2" . "titleCase" $titleCase "i18nAuthors" $i18nAuthors) -}}
+      </ol>
+    </div>
+  </nav>
+{{- end -}}
+
+{{- define "breadcrumbnav" -}}
+  {{- if .p1.Parent -}}
+    {{- template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 "i18nAuthors" .i18nAuthors)  -}}
+  {{- else if not .p1.IsHome -}}
+    {{- template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 "i18nAuthors" .i18nAuthors)  -}}
+  {{- end -}}
+
+  {{- if eq .p1 .p2 -}}
+    {{- if eq .p1.Type "author" -}}
+      {{ $author_key := path.Base .p1.File.Dir }}
+      {{ $title := index .i18nAuthors $author_key }}
+      <li class="breadcrumb-item active">{{ if .titleCase }}{{ title $title }}{{ else }}{{ $title }}{{ end }}</li>
+    {{- else -}}
+      <li class="breadcrumb-item active">{{ if .titleCase }}{{ title .p1.Title }}{{ else }}{{ .p1.Title }}{{ end }}</li>
+    {{- end -}}
+  {{- else -}}
+    <li class="breadcrumb-item"><a href="{{ .p1.Permalink }}">{{ if .p1.IsHome }}{{ i18n "home" }}{{ else }}{{ .p1.Title }}{{ end }}</a></li>
+  {{- end -}}
+{{- end -}}
+

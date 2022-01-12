@@ -1,0 +1,113 @@
+:root {
+    --hbs-body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /*--hbs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"*/
+}
+
+[data-palette=blue] {
+    --hbs-primary: #212529;
+    --hbs-navbar: #343a40;
+    /*
+        --hbs-on-primary: #fff;
+        --hbs-primary-text-on-surface: #212529;
+        --hbs-secondary-text-on-surface: #212529;
+        --hbs-accent: #212529;
+    */
+}
+
+[data-mode=light] {
+    --hbs-secondary-text-on-surface: #212529;
+}
+
+/*
+[data-mode=light] {
+    --hbs-background:#f6f8fa;
+    --hbs-background-light:rgba(225, 225, 225, 0.3);
+    --hbs-primary-text-on-background:#000;
+    --hbs-surface:#fff;
+    --hbs-primary-text-on-surface:rgba(0, 0, 0, 0.87);
+    --hbs-primary-text-on-surface-rgb:0, 0, 0;
+    --hbs-secondary-text-on-surface:rgba(0, 0, 0, 0.54);
+    --hbs-disabled-text-on-surface:rgba(0, 0, 0, 0.38);
+    --hbs-navbar:var(--hbs-primary);
+    --hbs-primary-text-on-navbar:#e1e1e1;
+    --hbs-accent-text-on-navbar:#e1e1e1;
+    --hbs-accent:var(--hbs-primary);
+    --hbs-accent-dark:var(--hbs-primary-dark)
+}
+*/
+
+.card.card-about .card-header {
+    border-bottom: none;
+}
+
+.card.card-about .card-body {
+    padding-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    /*color: #212529;*/
+}
+
+.card-title a {
+    font-weight: 700;
+}
+
+[data-mode=light] .axa-header-image {
+    background: transparent url("/images/bg2.png") no-repeat center top !important;
+}
+
+[data-mode=dark] .axa-header-image {
+    background-color: #909090 !important;
+}
+
+[data-mode=light] .dropdown-menu-dark {
+    background-color: var(--hbs-navbar);
+}
+
+[data-mode=light] .dropdown-menu-dark .dropdown-item {
+    /*color: var(--hbs-primary-text-on-navbar) !important;*/
+    color: #fff !important;
+}
+
+[data-mode=light] .dropdown-menu-dark .dropdown-item:hover {
+    background-color: #fff !important;
+    color: var(--hbs-navbar) !important;
+    /*background-color: var(--hbs-primary-text-on-navbar) !important;*/
+    /*color: var(--hbs-navbar) !important;*/
+}
+
+/*[data-mode=light] .navbar-nav .nav-link {*/
+.navbar-nav .nav-link {
+    font-weight: bold;
+    /*color: rgba(255,255,255,.75);*/
+    /*color: var(--hbs-primary-text-on-navbar);*/
+    /*color: var(--hbs-secondary-text-on-surface);*/
+    /*color: var(--hbs-primary-text-on-surface);*/
+}
+
+.dropdown:hover>.dropdown-menu {
+    margin: -0.125rem 0 0;
+    display: block;
+}
+
+.text-end {
+    text-align: right !important;
+}
+
+.taxonomy .card-body img {
+    float: left;
+    margin-right: 1rem;
+    width: 100px;
+    height: auto;
+    padding-bottom: .125rem;
+}
+
+ul.contact-list > li {
+    list-style-type: none;
+}
+
+ul.contact-list > li > ul {
+    list-style-type: none;
+}

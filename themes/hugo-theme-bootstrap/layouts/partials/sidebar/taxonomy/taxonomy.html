@@ -29,13 +29,12 @@
               <span class="badge badge-sm rounded-pill text-white bg-accent ms-1">{{ $taxonomy.Count }}</span>
             {{- end -}}
           </a>
-          {{- else if $showSeeAll -}}
-            {{- $showSeeAll = false -}}
-            {{- $title := T (printf "show_all_taxonomies_%s" $key) -}}
-<!--            <p class="text-end"><a class="btn btn-sm btn-primary dms-2" href="{{ absLangURL (urlize $key) }}">{{ $title }}</a></p>-->
-<!--            <p class="text-end"><a class="btn btn-sm btn-primary dms-2" href="{{ absLangURL (urlize $key) }}">&hellip;</a></p>-->
-            <a href="{{ absLangURL (urlize $key) }}" class="badge rounded post-taxonomy" title="{{ $title }}">&hellip;</a>
           {{- end -}}
+        {{- end -}}
+        {{- if $showSeeAll -}}
+          {{- $showSeeAll = false -}}
+          {{- $title := T (printf "show_all_taxonomies_%s" $key) -}}
+          <a href="{{ absLangURL (urlize $key) }}" class="badge rounded post-taxonomy" title="{{ $title }}">&hellip;</a>
         {{- end -}}
         </div>
       </div>

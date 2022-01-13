@@ -30,7 +30,7 @@
       <div class="post-meta mb-3">
         <span class="post-author">Scris de {{ printf "{{author}}" }}</span>
         <span class="post-date">Publicat la {{ printf "{{date}}" }}</span>
-        {{- $baseURL := absLangURL "" -}}
+        {{- $baseURL := absURL "" -}}
         {{- $placeholder := "{{#url}}{{.}}{{/url}}" -}}
         {{- range slice "series" "categories" "tags" -}}
         {{ printf "{{#%s}}" . }}

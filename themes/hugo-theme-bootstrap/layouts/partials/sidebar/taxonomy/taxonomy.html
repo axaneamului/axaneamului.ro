@@ -12,7 +12,7 @@
     <section class="{{ $key }}-taxonomies row card component">
       <div class="card-header">
         <h2 class="card-title">
-          <a href="{{ absLangURL (urlize $key) }}">{{ T $key }}</a>
+          <a href="{{ absURL (urlize $key) }}">{{ T $key }}</a>
         </h2>
       </div>
       <div class="card-body">
@@ -34,7 +34,7 @@
         {{- if $showSeeAll -}}
           {{- $showSeeAll = false -}}
           {{- $title := T (printf "show_all_taxonomies_%s" $key) -}}
-          <a href="{{ absLangURL (urlize $key) }}" class="badge rounded post-taxonomy" title="{{ $title }}">&hellip;</a>
+          <a href="{{ absURL (urlize $key) }}" class="badge rounded post-taxonomy" title="{{ $title }}">&hellip;</a>
         {{- end -}}
         </div>
       </div>

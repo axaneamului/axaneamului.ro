@@ -7,7 +7,7 @@
 {{- partial "head/meta" . -}}
 {{- partial "head/feed" . -}}
 {{- partial "head/site-verification" . -}}
-{{- if eq .Permalink (absLangURL "search/") -}}
-<meta data-name="search-index" content="{{ absLangURL "index.json" }}">
+{{- if eq .Permalink (absURL "search/") -}}
+<meta data-name="search-index" content="{{ absURL "index.json" }}">
 {{- end -}}
 {{- partial "head/assets" . -}}

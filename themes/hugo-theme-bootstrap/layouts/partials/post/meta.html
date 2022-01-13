@@ -3,7 +3,7 @@
     {{ if .Params.Authors }}
       {{ $author_key := (index .Params.Authors 0) }}
       {{ $author_val := index $.Site.Data.authors $author_key }}
-    Scris de <a href="{{ absLangURL (printf "/authors/%s" $author_key) }}">{{- $author_val -}}</a>
+    Scris de <a href="{{ absURL (printf "/authors/%s" $author_key) }}">{{- $author_val -}}</a>
     {{ end }}
   </span>
   {{- if and (default true (default .Site.Params.postDate .Params.postDate)) -}}

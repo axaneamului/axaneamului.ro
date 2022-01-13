@@ -16,7 +16,7 @@ paginate = 10
 disqusShortname = "axaneamului-ro"
 
 # Google analytics
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "G-ZRM60DS3SB"
 
 enableRobotsTXT = true
 

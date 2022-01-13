@@ -4,7 +4,7 @@
   [ro.params]
     dateFormat = "02-01-2006"
     description = "AXA - Revistă de oceanografie ortodoxă "
-    keywords = "Dumnezeu, Neam, Familie, AXA, Eminescu"
+    keywords = "Dumnezeu, Neam, Familie, România, AXA, Mihai Eminescu, Axa Neamului"
     [ro.params.archive]
       dateFormat = "2 January"
 

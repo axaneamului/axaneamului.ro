@@ -2,7 +2,7 @@
 title: "Axa 16"
 weight: 16
 menu:
-  main:
+  series:
     parent: "axa-anul-ii"
     name: "Axa 16"
     weight: 16

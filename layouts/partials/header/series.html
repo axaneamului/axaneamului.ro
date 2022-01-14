@@ -2,12 +2,12 @@
 {{- $baseURL := $.Site.BaseURL -}}
 <ul class="navbar-nav">
   {{- $currentPage := . -}}
-  {{- range .Site.Menus.main -}}
+  {{- range .Site.Menus.series -}}
   {{- $url := .URL | absURL -}}
-  {{- $active := or (eq $currentPage.Permalink (absURL .URL)) ($currentPage.IsMenuCurrent "main" .) -}}
+  {{- $active := or (eq $currentPage.Permalink (absURL .URL)) ($currentPage.IsMenuCurrent "series" .) -}}
   {{- if .HasChildren -}}
     <li class="nav-item dropdown">
-      <a class="nav-link{{ if $currentPage.HasMenuCurrent "main" . }} active{{ end }} dropdown-toggle" id="navbarDropdown{{ title .Identifier }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <a class="nav-link{{ if $currentPage.HasMenuCurrent "series" . }} active{{ end }} dropdown-toggle" id="navbarDropdown{{ title .Identifier }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         {{ .Pre }} {{- .Name -}} {{ .Post }}
       </a>
       <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown{{ title .Identifier }}">
@@ -18,12 +18,12 @@
         {{- else -}}
         <li>
           {{- if gt (len .Page.Pages) 0 -}}
-            <a class="dropdown-item{{ if or (eq $currentPage.Permalink (absURL .URL)) ($currentPage.IsMenuCurrent "main" .) }} active{{ end }}"
+            <a class="dropdown-item{{ if or (eq $currentPage.Permalink (absURL .URL)) ($currentPage.IsMenuCurrent "series" .) }} active{{ end }}"
               href="{{ $childURL }}"{{ if not (hasPrefix $childURL $baseURL) }} target="_blank" rel="noopener noreferrer"{{ end }}>
               {{ .Pre }} {{- .Name -}} {{ .Post }}
             </a>
           {{- else -}}
-            <a class="dropdown-item{{ if or (eq $currentPage.Permalink (absURL .URL)) ($currentPage.IsMenuCurrent "main" .) }} active{{ end }} disabled"
+            <a class="dropdown-item{{ if or (eq $currentPage.Permalink (absURL .URL)) ($currentPage.IsMenuCurrent "series" .) }} active{{ end }} disabled"
               href="{{ $childURL }}"{{ if not (hasPrefix $childURL $baseURL) }} target="_blank" rel="noopener noreferrer"{{ end }}>
               {{ .Pre }} {{- .Name -}} {{ .Post }}
             </a>

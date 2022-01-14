@@ -1,7 +1,7 @@
 ---
 title: "AXA ANUL II"
 menu:
-  main:
+  series:
     name: "AXA ANUL II"
     identifier: "axa-anul-ii"
     weight: 2

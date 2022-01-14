@@ -16,9 +16,11 @@
   </span>
   {{- end -}}
   {{- if and (default true (default .Site.Params.readingTime .Params.readingTime)) -}}
-  <span class="post-reading-time">
-    {{ i18n "reading_time" . }}
-  </span>
+    {{- if gt .ReadingTime 0 -}}
+      <span class="post-reading-time">
+        {{ i18n "reading_time" . }}
+      </span>
+    {{- end -}}
   {{- end -}}
   <span class="post-taxonomies">
   {{- range $key, $value := .Site.Taxonomies -}}

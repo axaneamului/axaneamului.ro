@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 /*[data-mode=light] .navbar-nav .nav-link {*/
 .navbar-nav .nav-link {
     font-weight: bold;
+    white-space: nowrap;
     /*color: rgba(255,255,255,.75);*/
     /*color: var(--hbs-primary-text-on-navbar);*/
     /*color: var(--hbs-secondary-text-on-surface);*/

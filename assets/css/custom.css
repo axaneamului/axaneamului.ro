@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-mode=light] .axa-header-image-dark {
-     display: none;
+    display: none;
 }
 
 [data-mode=light] .axa-header-image-light {

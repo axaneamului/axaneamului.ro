@@ -54,20 +54,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-.axa-header-image-light {
+[data-mode=dark] .axa-header-image-light {
     display: none;
 }
 
-.axa-header-image-dark {
-    display: none;
-}
-
-[data-mode=light] .axa-header-image-light {
-    display: initial;
-}
-
-[data-mode=dark] .axa-header-image-dark {
-    display: initial;
+[data-mode=light] .axa-header-image-dark {
+     display: none;
 }
 
 [data-mode=light] .axa-header-image-light {

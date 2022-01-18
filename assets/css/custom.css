@@ -54,13 +54,33 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-[data-mode=light] .axa-header-image {
-    background: transparent url("/images/bg2.png") no-repeat center top !important;
+.axa-header-image-light {
+    display: none;
 }
 
-[data-mode=dark] .axa-header-image {
-    background-color: #909090 !important;
+.axa-header-image-dark {
+    display: none;
 }
+
+[data-mode=light] .axa-header-image-light {
+    display: initial;
+}
+
+[data-mode=dark] .axa-header-image-dark {
+    display: initial;
+}
+
+[data-mode=light] .axa-header-image-light {
+    background: transparent url("/images/logo-bg-light.png") no-repeat center top !important;
+}
+
+[data-mode=dark] .axa-header-image-dark {
+    background: transparent url("/images/logo-bg-dark.png") no-repeat center top !important;
+}
+
+/*[data-mode=dark] .axa-header-image-dark {*/
+/*    background-color: #121212 !important;*/
+/*}*/
 
 [data-mode=light] .dropdown-menu-dark {
     background-color: var(--hbs-navbar);

@@ -36,14 +36,6 @@
 }
 */
 
-.card.card-about .card-header {
-    border-bottom: none;
-}
-
-.card.card-about .card-body {
-    padding-top: 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     font-weight: 700;
@@ -130,3 +122,28 @@ ul.contact-list > li > ul {
     /*height: 100%;*/
     border:0;
 }
+
+.card.card-about .card-header {
+    border-bottom: none;
+}
+
+.card.card-about .card-body {
+    padding-top: 0;
+}
+
+/*
+.profile-bio {
+    padding: .25rem 0;
+    font-style: italic;
+}
+
+.card.card-about ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card.card-about li {
+    padding: .25rem 0;
+    clear: both;
+}
+*/

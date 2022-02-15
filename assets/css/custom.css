@@ -175,3 +175,11 @@ ul.contact-list > li > ul {
 .last-verse-right {
     margin-left: 10rem;
 }
+
+.axa-note:before {
+    display: unset;
+}
+
+.axa-note-def {
+    font-weight: bold;
+}

@@ -6,4 +6,5 @@ menu:
     parent: "axa-anul-i"
     name: "Axa 8"
     weight: 8
+final: true
 ---

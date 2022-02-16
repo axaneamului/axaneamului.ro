@@ -6,4 +6,12 @@ menu:
     parent: "axa-anul-ii"
     name: "Axa 15"
     weight: 15
+year: II
+number: 15
+date: aprilie 2009
+day: 
+meta:
+quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.
+quote-author: Mihai EMINESCU
+note: publicație bilunară de antipolitică şi cultură editată de Grupul de Acțiune Națională
 ---

@@ -6,4 +6,11 @@ menu:
     parent: "axa-anul-i"
     name: "Axa 6"
     weight: 6
+year: I
+number: 6
+date: 
+day: 
+meta: 
+quote: 
+quote-author: 
 ---

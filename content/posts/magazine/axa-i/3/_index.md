@@ -6,4 +6,11 @@ menu:
     parent: "axa-anul-i"
     name: "Axa 3"
     weight: 3
+year: I
+number: 3
+date: 2008-02-15T00:00:00Z
+day: vineri
+meta: Sf. Ap. Onisim; Sf. Mc. Maior; Sf. Cuv. Eusebiu
+quote: Țările se pustiesc din lăcomia celor mari.
+quote-author: Proverbele Românilor. Iuliu A. ZANNE
 ---

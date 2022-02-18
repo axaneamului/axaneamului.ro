@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# squoosh.app
+
 # https://askubuntu.com/questions/781497/how-can-i-compress-images
 # convert -resize 85% test.jpg test-new.jpg
 # convert -quality 50% test.jpg test-new.jpg

@@ -8,7 +8,7 @@ menu:
     weight: 14
 year: II
 number: 14
-date: 2009-03-01T00:00:00Z
+date: 2009-04-01T00:00:00Z
 day: miercuri
 meta:
 quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.

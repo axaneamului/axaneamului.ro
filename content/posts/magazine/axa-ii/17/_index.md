@@ -14,4 +14,5 @@ meta: Revista AXA ajunge la dumneavoastră exclusiv prin eforturile voluntare al
 quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.
 quote-author: Mihai EMINESCU
 note: publicație bilunară de antipolitică şi cultură editată de Grupul de Acțiune Națională
+issn: 1843-9179
 ---

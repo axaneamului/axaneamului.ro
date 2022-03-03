@@ -6,8 +6,8 @@ menu:
     parent: "axa-anul-i"
     name: "Axa 1"
     weight: 1
-year: I
-number: 1
+magazine-year: I
+magazine-number: 1
 date: 2008-02-01T00:00:00Z
 day: vineri
 meta: Înainteprăznuirea Întâmpinării Domnului; Sf. Mc. Trifon; Sf. Mucenițe Perpetua şi Felicitas

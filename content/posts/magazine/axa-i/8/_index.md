@@ -7,8 +7,8 @@ menu:
     name: "Axa 8"
     weight: 8
 final: true
-year: I
-number: 8
+magazine-year: I
+magazine-number: 8
 date: 2008-04-04T00:00:00Z
 day: vineri
 meta: Cuv. Iosif scriitorul-de-cântări; Cuv. Gheorghe de la Maleon; Sf. Ierarh Isidor de Sevilia

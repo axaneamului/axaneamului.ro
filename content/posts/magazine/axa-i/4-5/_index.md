@@ -7,8 +7,8 @@ menu:
     name: "Axa 4-5"
     weight: 4
 final: true
-year: I
-number: 4-5
+magazine-year: I
+magazine-number: 4-5
 date: 2008-02-29T00:00:00Z
 day: vineri
 meta: † Cuvioșii Ioan Casian Românul şi Gherman din Dobrogea

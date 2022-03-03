@@ -6,8 +6,8 @@ menu:
     parent: "axa-anul-i"
     name: "Axa 10"
     weight: 10
-year: I
-number: 10
+magazine-year: I
+magazine-number: 10
 date: 2008-04-18T00:00:00Z
 day: vineri
 meta: Cuviosul Ioan, ucenicul Sfântului Grigorie Decapolitul

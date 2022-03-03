@@ -6,8 +6,8 @@ menu:
     parent: "axa-anul-ii"
     name: "Axa 17"
     weight: 17
-year: II
-number: 17
+magazine-magazine-year: II
+magazine-number: 17
 date: 16-31 mai 2009
 day:
 meta: Revista AXA ajunge la dumneavoastră exclusiv prin eforturile voluntare ale editorilor săi. Dacă publicația noastră v-a trezit interesul, puteți aduce o contribuție minimă la susținerea ei prin încheierea unui abonament.

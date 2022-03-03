@@ -6,8 +6,8 @@ menu:
     parent: "axa-anul-i"
     name: "Axa 11"
     weight: 11
-year: I
-number: 11
+magazine-year: I
+magazine-number: 11
 date: 2008-05-16T00:00:00Z
 day: vineri
 meta: Cuviosul Teodor cel sfințit, Mucenicul Cuvios Pahomie; Sfinții Mucenici Isaachie, Simeon şi Petru

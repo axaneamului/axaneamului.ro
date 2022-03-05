@@ -19,7 +19,11 @@
         {{- $img = $imgFile | absURL -}}
       {{- end -}}
     {{- end -}}
-    {{- $item := (dict "title" $title "author" $author_val "tags" .Params.tags "categories" .Params.categories "series" .Params.series "content" .Plain "permalink" .Permalink "date" $date "img" $img) -}}
+    {{- $youtube := "" -}}
+    {{- if .Params.youtube -}}
+      {{- $youtube = .Params.youtube -}}
+    {{- end -}}
+    {{- $item := (dict "title" $title "author" $author_val "tags" .Params.tags "categories" .Params.categories "series" .Params.series "content" .Plain "permalink" .Permalink "date" $date "img" $img "youtube" $youtube) -}}
     {{- $.Scratch.Add "index" $item -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | uniq | jsonify -}}

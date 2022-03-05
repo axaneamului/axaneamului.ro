@@ -2,7 +2,10 @@
     animation-duration: 2s;
     animation-name: loading-bar;
     animation-iteration-count: infinite;
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    // background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    // background: linear-gradient(to right, #002B7F, #FCD116, #CE1126);
+    background: linear-gradient(to right, #002B7F, #FCD116, #CE1126, #002B7F, #FCD116, #CE1126);
+    // background: linear-gradient(to right, #002B7F, #002B7F, #002B7F, #FCD116, #FCD116, #FCD116, #CE1126, #CE1126, #CE1126);
     height: 2px;
     position: fixed;
     top: 0;

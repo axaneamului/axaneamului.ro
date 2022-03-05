@@ -1,6 +1,9 @@
 <div class="container">
   <div class="row content">
-    <a href="/"><img src="/images/logo.png" alt="AXA" title="AXA" width="100%" class="axa-header-image"></a>
+    <a href="/">
+      <img src="/images/logo-light.png" alt="AXA" title="AXA" width="100%" class="axa-header-image-light">
+      <img src="/images/logo-dark.png" alt="AXA" title="AXA" width="100%" class="axa-header-image-dark">
+    </a>
 
     <nav class="navbar top-app-bar top-app-bar-expand-lg{{ if (default true $.Site.Params.fixedHeader) }} fixed-top{{ end }} navbar-dark bg-dark">
       <div class="container{{ if default false .Site.Params.fullWidth }}-fluid{{ end }}">

@@ -47,14 +47,16 @@
         </h2>
       </div>
       <div class="card-body">
-          {{ if .Params.Images }}
+          {{- if .Params.Images -}}
             {{ partial "helpers/image" (dict "filename" (index .Params.Images 0) "alt" .Title "class" "img-fluid" "resources" .Resources) }}
-          {{ end }}
-          {{ if (eq .Type "author") }}
+          {{- else -}}
+            {{- partial "post/video" . -}}
+          {{- end -}}
+          {{- if (eq .Type "author") -}}
             {{- partial "author/meta" . -}}
-          {{ else }}
+          {{- else -}}
             {{- partial "post/meta" . -}}
-          {{ end }}
+          {{- end -}}
           <div class="post-summary">
             {{ partial "post/excerpt" . }}
           </div>

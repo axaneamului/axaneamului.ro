@@ -38,7 +38,11 @@
         {{ printf "{{/%s}}" . }}
         {{- end -}}
       </div>
-      <div class="search-result-content mb-3">{{ print "{{{#img}}}<img src=\"{{{img}}}\"/>{{{/img}}}" | safeHTML }}{{ print "{{{content}}}" }}</div>
+      <div class="search-result-content mb-3">
+        {{ print "{{#img}}<img src=\"{{img}}\"/>{{/img}}" | safeHTML }}
+        {{ print "{{#youtube}}<div><iframe src=\"https://www.youtube.com/embed/{{youtube}}\" allowfullscreen title=\"{{title}}\"></iframe></div>{{/youtube}}" | safeHTML }}
+        {{ print "{{{content}}}" }}
+      </div>
     </div>
   </div>
 </script>

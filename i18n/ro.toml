@@ -168,7 +168,7 @@ other = "Nici un rezultat găsit."
 other = "S-au găsit {{ .Total }} rezultate."
 
 [series]
-other = "Serii"
+other = "Revistă"
 
 [settings]
 other = "Setări"

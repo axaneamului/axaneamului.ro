@@ -228,6 +228,7 @@ export class Search {
         content,
         id,
         img: result.item.img,
+        youtube: result.item.youtube,
         permalink: result.item.permalink,
         categories: result.item.categories,
         tags: result.item.tags,

@@ -10,7 +10,7 @@ magazine-year: I
 magazine-number: 11
 date: 2008-05-16T00:00:00Z
 day: vineri
-meta: Cuviosul Teodor cel sfințit, Mucenicul Cuvios Pahomie; Sfinții Mucenici Isaachie, Simeon şi Petru
-quote: Păcatul intră râzând şi iese plângând.
+meta: Cuviosul Teodor cel sfințit, Mucenicul Cuvios Pahomie; Sfinții Mucenici Isaachie, Simeon și Petru
+quote: Păcatul intră râzând și iese plângând.
 quote-author: Proverbele Românilor. Iuliu A. ZANNE
 ---

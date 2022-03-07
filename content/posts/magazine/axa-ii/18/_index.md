@@ -15,6 +15,6 @@ quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie s
 quote-author: Mihai EMINESCU
 quote-2: Nu te închina până nu știi cine-i sfântul
 quote-2-author: Proverbele Românilor, Iuliu A. Zanne
-note: publicație bilunară de antipolitică şi cultură editată de Grupul de Acțiune Națională
+note: publicație bilunară de antipolitică și cultură editată de Grupul de Acțiune Națională
 issn: 1843-9179
 ---

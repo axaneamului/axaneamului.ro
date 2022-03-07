@@ -2,6 +2,9 @@
 
 # squoosh.app
 
+# img2pdf {0..15}.jpg --output combined.pdf
+# pdftoppm src.pdf p -jpeg
+
 # https://askubuntu.com/questions/781497/how-can-i-compress-images
 # convert -resize 85% test.jpg test-new.jpg
 # convert -quality 50% test.jpg test-new.jpg

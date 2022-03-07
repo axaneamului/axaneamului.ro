@@ -183,3 +183,11 @@ ul.contact-list > li > ul {
 .axa-note-def {
     font-weight: bold;
 }
+
+table.table-no-borders,
+table.table-no-borders tr,
+table.table-no-borders thead,
+table.table-no-borders th,
+table.table-no-borders tbody,
+table.table-no-borders td { border: none; }
+table.table-no-borders td { padding: 0; text-align: center; }

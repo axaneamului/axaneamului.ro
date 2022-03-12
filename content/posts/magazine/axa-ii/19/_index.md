@@ -10,7 +10,7 @@ magazine-magazine-year: II
 magazine-number: 19
 date: 16-30 iunie 2009
 day:
-meta: '„Nimeni să nu ne stăpânescă în credința noastră ortodoxă: nici un împărat, nici un ierarh, nici un mincinos sinod, nici altcineva, ci numai Unul Dumnezeu, care atât prin EL cât și prin ucenicii Săi ne-a fost dat nouă.”'
+meta: '„Nimeni să nu ne stăpânească în credința noastră ortodoxă: nici un împărat, nici un ierarh, nici un mincinos sinod, nici altcineva, ci numai Unul Dumnezeu, care atât prin El cât și prin ucenicii Săi ne-a fost dat nouă.”'
 meta-author: Sfântul Marcu al Efesului
 quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.
 quote-author: Mihai EMINESCU

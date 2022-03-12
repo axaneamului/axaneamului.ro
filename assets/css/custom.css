@@ -195,3 +195,12 @@ table.table-no-borders td { padding: 0; text-align: center; }
 .fst-italic {
     font-style: italic;
 }
+
+table.table-no-borders-center td { text-align: center; }
+
+table.table-no-borders-left td { text-align: left; }
+
+table.table-no-borders-left td:first-child { padding-right: 20px; }
+
+
+

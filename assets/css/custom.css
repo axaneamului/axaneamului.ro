@@ -196,6 +196,10 @@ table.table-no-borders td { padding: 0; text-align: center; }
     font-style: italic;
 }
 
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
 table.table-no-borders-center td { text-align: center; }
 
 table.table-no-borders-left td { text-align: left; }

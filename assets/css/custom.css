@@ -226,3 +226,7 @@ p:first-child::first-line {
     color: #7f7664;
 }
 */
+
+.alert-author-info {
+    background-color: var(--hbs-background);
+}

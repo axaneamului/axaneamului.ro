@@ -32,6 +32,13 @@
     {{- partial "author" . -}}
   {{- end -}}
 
+    {{ if .Params.Images }}
+    <div class="posts-images">
+      <img class="img-fluid" alt="{{ .Title }}" src="{{ index .Params.Images 0 }}" loading="lazy" />
+    </div>
+    <br>
+    {{ end }}
+
   {{- range $pages -}}
     <article class="row card post component">
       {{- if and (default true $.Site.Params.pinned) .Params.pinned -}}

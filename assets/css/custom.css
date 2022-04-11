@@ -230,3 +230,7 @@ p:first-child::first-line {
 .alert-author-info {
     background-color: var(--hbs-background);
 }
+
+.text-right {
+    text-align: right !important;
+}

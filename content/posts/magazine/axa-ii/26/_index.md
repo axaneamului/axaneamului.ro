@@ -2,10 +2,10 @@
 title: "Axa 26"
 weight: 26
 menu:
-main:
-parent: "axa-anul-ii"
-name: "Axa 26"
-weight: 26
+  main:
+    parent: "axa-anul-ii"
+    name: "Axa 26"
+    weight: 26
 magazine-magazine-year: II
 magazine-number: 26
 date: 01-15 octombrie 2009
@@ -19,5 +19,5 @@ quote-2-author: Proverbele Românilor, Iuliu A. Zanne
 note: publicație bilunară de antipolitică și cultură editată de Grupul de Acțiune Națională
 issn: 1843-9179
 images:
-- "images/0.jpg"
+  - "images/0.jpg"
 ---

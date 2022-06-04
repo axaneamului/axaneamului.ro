@@ -2,10 +2,10 @@
 title: "Axa 24"
 weight: 24
 menu:
-main:
-parent: "axa-anul-ii"
-name: "Axa 24"
-weight: 24
+  main:
+    parent: "axa-anul-ii"
+    name: "Axa 24"
+    weight: 24
 magazine-magazine-year: II
 magazine-number: 24
 date: 01-15 septembrie 2009

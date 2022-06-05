@@ -32,12 +32,13 @@
     {{- partial "author" . -}}
   {{- end -}}
 
-    {{ if .Params.Images }}
-    <div class="posts-images">
-      <img class="img-fluid" alt="{{ .Title }}" src="{{ index .Params.Images 0 }}" loading="lazy" />
-    </div>
-    <br>
-    {{ end }}
+  {{ if .Params.Images }}
+  <div class="posts-images">
+    <!-- TODO fix src -->
+    <img class="img-fluid" alt="{{ .Title }}" src="{{ .Permalink }}/{{ index .Params.Images 0 }}" loading="lazy" />
+  </div>
+  <br>
+  {{ end }}
 
   {{- range $pages -}}
     <article class="row card post component">

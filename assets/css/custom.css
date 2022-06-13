@@ -234,3 +234,7 @@ p:first-child::first-line {
 .text-right {
     text-align: right !important;
 }
+
+.post-sections .post-section a:hover {
+    text-decoration: underline;
+}

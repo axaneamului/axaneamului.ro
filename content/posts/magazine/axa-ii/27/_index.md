@@ -20,5 +20,4 @@ note: publicație bilunară de antipolitică și cultură editată de Grupul de 
 issn: 1843-9179
 images:
   - "images/0.jpg"
-  - "images/1.jpg"
 ---

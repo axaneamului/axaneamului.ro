@@ -1,0 +1,11 @@
+{
+    "spellright.language": [
+        "ro_RO"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "html"
+    ]
+}

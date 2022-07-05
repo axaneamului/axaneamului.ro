@@ -206,6 +206,13 @@ table.table-no-borders-left td { text-align: left; }
 
 table.table-no-borders-left td:first-child { padding-right: 20px; }
 
+.p-first-word {
+    font-size: 1.2rem;
+    /*color: #e80222;*/
+    font-weight: bold;
+    line-height: .75;
+}
+
 /*p:first-letter {
     font-size: 72px;
     float: left;

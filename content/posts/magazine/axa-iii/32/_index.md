@@ -6,7 +6,7 @@ menu:
     parent: "axa-anul-ii"
     name: "Axa 32"
     weight: 32
-magazine-magazine-year: II
+magazine-magazine-year: III
 magazine-number: 32
 date: 16-31 ianuarie 2010
 day:

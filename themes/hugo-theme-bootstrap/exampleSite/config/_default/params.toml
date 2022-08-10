@@ -135,7 +135,7 @@ viewer = true # Image Viewer
 [pwa]
   [pwa.manifest]
     # name = "" # Default to site title.
-    short_name = "HBS"
+    short_name = "AXA"
     # display = "fullscreen" # Default to standalone.
     # description = "" # Default to site description.
     # theme_color = ""

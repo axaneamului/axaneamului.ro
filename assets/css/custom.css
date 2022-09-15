@@ -245,3 +245,7 @@ p:first-child::first-line {
 .post-sections .post-section a:hover {
     text-decoration: underline;
 }
+
+.axa-paragraph {
+    text-indent: 1rem;
+}

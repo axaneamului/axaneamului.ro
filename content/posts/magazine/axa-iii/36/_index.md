@@ -20,4 +20,11 @@ note: publicație bilunară de antipolitică și cultură editată de Grupul de 
 issn: 1843-9179
 images:
   - "images/0.jpg"
+#Redacţia:
+#Ciprian BOJAN - redactor, Marius CARAMAN - fotografii, Costin C. - consultant, Eleodorus ENĂCHESCU - redactor,
+#Alina GLOD - secretar general de redacţie, Grigore OPRIŢA - consultant, Dragoş NICU - redactor şef adjunct,
+#Ştefan PLĂMĂDEALĂ - redactor, Ionuţ RUSE - director difuzare,
+#Florin STUPARU - redactor şef, Şerban TEODORESCU - IT, Mugur VASILIU - director.
+#Puteţi să vă procuraţi publicaţia AXA la numărul de telefon 0721.094.447 – Ionuţ RUSE
+#sau la adresa: Ionuţ RUSE – comuna Chirnogi, judeţul Călăraşi, cod 917025
 ---

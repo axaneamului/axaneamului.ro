@@ -32,6 +32,7 @@ googleAdsense = ""
 # breadcrumb = false # Disable breadcrumb
 # diagram = true
 # socialShare = false # disable social network sharing
+socialShare = true
 # searchBar = false # disable search-bar
 
 # poweredBy = false # Whether to show powered by.

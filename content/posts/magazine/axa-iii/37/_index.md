@@ -2,8 +2,29 @@
 title: "Axa 37"
 weight: 37
 menu:
-  main:
-    parent: "axa-anul-iii"
-    name: "Axa 37"
-    weight: 37
+main:
+parent: "axa-anul-iii"
+name: "Axa 37"
+weight: 37
+magazine-magazine-year: III
+magazine-number: 37
+date: 16-30 aprilie 2010
+day:
+meta: '„Nimeni să nu ne stăpânească în credința noastră ortodoxă: nici un împărat, nici un ierarh, nici un mincinos sinod, nici altcineva, ci numai Unul Dumnezeu, care atât prin El cât și prin ucenicii Săi ne-a fost dat nouă.”'
+meta-author: Sfântul Marcu al Efesului
+quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.
+quote-author: Mihai EMINESCU
+quote-2: Nu te închina până nu știi cine-i sfântul
+quote-2-author: Proverbele Românilor, Iuliu A. Zanne
+note: publicație bilunară de antipolitică și cultură editată de Grupul de Acțiune Națională
+issn: 1843-9179
+images:
+  - "images/0.jpg"
+#Redacţia:
+#Ciprian BOJAN - redactor, Marius CARAMAN - fotografii, Costin C. - consultant, Eleodorus ENĂCHESCU - redactor,
+#Alina GLOD - secretar general de redacţie, Grigore OPRIŢA - consultant, Dragoş NICU - redactor şef adjunct,
+#Ştefan PLĂMĂDEALĂ - redactor, Ionuţ RUSE - director difuzare,
+#Florin STUPARU - redactor şef, Şerban TEODORESCU - IT, Mugur VASILIU - director.
+#Puteţi să vă procuraţi publicaţia AXA la numărul de telefon 0721.094.447 – Ionuţ RUSE
+#sau la adresa: Ionuţ RUSE – comuna Chirnogi, judeţul Călăraşi, cod 917025
 ---

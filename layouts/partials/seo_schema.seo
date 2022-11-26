@@ -21,6 +21,6 @@
     "dateModified": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
     "url": "{{ replace .Permalink "\\" "" }}",
     "wordCount": "{{ .WordCount }}",
-    "keywords": [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"axa" ]
+    "keywords": {{ split $.Site.Params.keywords ", " }}
 }
 </script>

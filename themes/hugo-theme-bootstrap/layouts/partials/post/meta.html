@@ -1,15 +1,17 @@
 <div class="post-meta">
+  {{ if .Params.Authors }}
+  {{ $author_key := (index .Params.Authors 0) }}
+  {{ $author_val := index $.Site.Data.authors $author_key }}
+  {{ if not (eq $author_key "") }}
   <span class="post-author">
-    {{ if .Params.Authors }}
-      {{ $author_key := (index .Params.Authors 0) }}
-      {{ $author_val := index $.Site.Data.authors $author_key }}
       {{ if (eq $author_val "DOCUMENT") }}
         <a href="{{ absURL (printf "/authors/%s" $author_key) }}">{{- $author_val -}}</a>
       {{ else }}
         Scris de <a href="{{ absURL (printf "/authors/%s" $author_key) }}">{{- $author_val -}}</a>
       {{ end }}
-    {{ end }}
   </span>
+  {{ end }}
+  {{ end }}
   {{- if and (default true (default .Site.Params.postDate .Params.postDate)) -}}
   {{- $dateParams := dict "createdOn" .Date.Local -}}
   {{ if gt .Lastmod .Date }}

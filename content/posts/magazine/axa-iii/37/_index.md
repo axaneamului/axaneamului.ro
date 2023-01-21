@@ -20,7 +20,7 @@ note: publicație bilunară de antipolitică și cultură editată de Grupul de 
 issn: 1843-9179
 images:
   - "images/0.jpg"
-#Redacia:
+#Redacția:
 #Ciprian BOJAN - redactor, Marius CARAMAN - fotografii, Costin C. - consultant, Eleodorus ENĂCHESCU - redactor,
 #Alina GLOD - secretar general de redacție, Grigore OPRIȚA - consultant, Dragoș NICU - redactor șef adjunct,
 #Ștefan PLĂMĂDEALĂ - redactor, Ionuț RUSE - director difuzare,

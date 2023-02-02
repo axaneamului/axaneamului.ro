@@ -180,6 +180,10 @@ ul.contact-list > li > ul {
     display: unset;
 }
 
+.axa-note {
+    font-weight: bold;
+}
+
 .axa-note-def {
     font-weight: bold;
 }

@@ -6,6 +6,8 @@
   <span class="post-author">
       {{ if (eq $author_val "DOCUMENT") }}
         <a href="{{ absURL (printf "/authors/%s" $author_key) }}">{{- $author_val -}}</a>
+      {{ else if (eq $author_val "INTERVIU") }}
+        <a href="{{ absURL (printf "/authors/%s" $author_key) }}">{{- $author_val -}}</a>
       {{ else }}
         Scris de <a href="{{ absURL (printf "/authors/%s" $author_key) }}">{{- $author_val -}}</a>
       {{ end }}

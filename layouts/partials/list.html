@@ -32,6 +32,35 @@
     {{- partial "author" . -}}
   {{- end -}}
 
+  {{ if .Params.Images }}
+    <article class="row card component magazine-image">
+      <div class="card-body">
+      <img class="img-fluid" alt="{{ .Title }}" src="{{ .Permalink }}/{{ index .Params.Images 0 }}" loading="lazy" />
+<!--
+      {{ if .Params.quote3 }}
+      <div class="alert-light small" role="alert" style="margin-top: 1rem;">
+        {{.Params.quote3 | safeHTML }}
+      </div>
+      {{ end }}
+-->
+      </div>
+    </article>
+<!--
+  <div class="magazine-image">
+    &lt;!&ndash;    TODO fix src &ndash;&gt;
+    <img class="img-fluid" alt="{{ .Title }}" src="{{ .Permalink }}/{{ index .Params.Images 0 }}" loading="lazy" />
+    &lt;!&ndash;
+    {{ if .Params.quote3 }}
+    <div class="alert alert-light" role="alert">
+      {{.Params.quote3 | safeHTML }}
+    </div>
+    {{ end }}
+    &ndash;&gt;
+  </div>
+-->
+  <br>
+  {{ end }}
+
   {{- range $pages -}}
     <article class="row card post component">
       {{- if and (default true $.Site.Params.pinned) .Params.pinned -}}

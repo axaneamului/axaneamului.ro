@@ -259,3 +259,14 @@ p:first-child::first-line {
     color: #fff;
     padding: 0 4px;
 }
+
+.magazine-image {
+    text-align: center;
+}
+
+.magazine-image .alert-light {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    text-align: left;
+}

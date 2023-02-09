@@ -253,3 +253,9 @@ p:first-child::first-line {
 .axa-paragraph {
     text-indent: 1rem;
 }
+
+.quote3 strong {
+    background-color: var(--hbs-secondary-text-on-surface);
+    color: #fff;
+    padding: 0 4px;
+}

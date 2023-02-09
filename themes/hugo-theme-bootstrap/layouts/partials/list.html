@@ -36,6 +36,11 @@
   <div class="posts-images">
     <!-- TODO fix src -->
     <img class="img-fluid" alt="{{ .Title }}" src="{{ .Permalink }}/{{ index .Params.Images 0 }}" loading="lazy" />
+<!--
+    {{ if .Params.quote3 }}
+      <p class="small quote3" style="margin-top: 10px;">{{.Params.quote3 | safeHTML }}</p>
+    {{ end }}
+-->
   </div>
   <br>
   {{ end }}

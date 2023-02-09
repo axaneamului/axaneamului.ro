@@ -16,6 +16,7 @@ quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie s
 quote-author: Mihai EMINESCU
 quote-2: Nu te închina până nu știi cine-i sfântul
 quote-2-author: Proverbele Românilor, Iuliu A. Zanne
+quote3: Înțelegem prin <strong>oceanografie ortodoxă</strong> o preocupare permanentă, vitală pentru înțelegerea lumii înconjurătoare, de la aspectele ei cotidiene, prozaice și până la gesturile complexe, tainice, religioase; în același timp este o luare de poziție, o valorificare a lumii din perspectivă ortodoxă. Nu am anunțat–o ca pe o știință, nu temându–ne de rigoarea disciplinelor științifice, ci pentru că dorim ca <strong>oceanografia ortodoxă</strong> să fie un mod de a aprecia tot ce ne conține; pe de altă parte, o vedem ca pe o înlesnire a accesului la înțelesurile lumii românești – implicit, ortodoxe – nu ca la un fișier bibliografic ci ca la o părtășie la viață, ca un răspuns la permanenta provocare a transcendentului în imediat. Aceasta presupune existența apriorică a unui fel ortodox de a vedea lumea. Astfel, <strong>oceanografia ortodoxă</strong> înseamnă receptarea spiritului vremii prin folosirea unui anumit mod de interpretare și totodată încercarea de a construi un mod de interpretare.
 note: publicație bilunară de antipolitică și cultură editată de Grupul de Acțiune Națională
 issn: 1843-9179
 images:

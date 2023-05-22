@@ -2,10 +2,10 @@
 title: "Axa 40"
 weight: 40
 menu:
-main:
-parent: "axa-anul-iii"
-name: "Axa 40"
-weight: 40
+  main:
+    parent: "axa-anul-iii"
+    name: "Axa 40"
+    weight: 40
 magazine-magazine-year: III
 magazine-number: 40
 date: 01-15 iunie 2010

@@ -2,10 +2,10 @@
 title: "Axa 39"
 weight: 39
 menu:
-main:
-parent: "axa-anul-iii"
-name: "Axa 39"
-weight: 39
+  main:
+    parent: "axa-anul-iii"
+    name: "Axa 39"
+    weight: 39
 magazine-magazine-year: III
 magazine-number: 39
 date: 16-31 mai 2010

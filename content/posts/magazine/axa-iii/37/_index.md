@@ -2,10 +2,10 @@
 title: "Axa 37"
 weight: 37
 menu:
-main:
-parent: "axa-anul-iii"
-name: "Axa 37"
-weight: 37
+  main:
+      parent: "axa-anul-iii"
+      name: "Axa 37"
+      weight: 37
 magazine-magazine-year: III
 magazine-number: 37
 date: 16-30 aprilie 2010

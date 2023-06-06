@@ -4,5 +4,5 @@ menu:
   main:
     name: "Social"
     identifier: "social"
-    weight: 5
+    weight: 4
 ---

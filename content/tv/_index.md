@@ -4,5 +4,5 @@ menu:
   main:
     name: "TV"
     identifier: "tv"
-    weight: 10
+    weight: 7
 ---

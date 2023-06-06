@@ -4,5 +4,5 @@ menu:
   main:
     name: "Sfânta Tradiție"
     identifier: "holy-tradition"
-    weight: 4
+    weight: 2
 ---

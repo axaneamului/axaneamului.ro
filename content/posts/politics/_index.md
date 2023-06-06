@@ -4,5 +4,5 @@ menu:
   main:
     name: "Politică"
     identifier: "politics"
-    weight: 2
+    weight: 3
 ---

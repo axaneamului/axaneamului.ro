@@ -14,4 +14,6 @@ day: vineri
 meta: † Cuvioșii Ioan Casian Românul și Gherman din Dobrogea
 quote: Țările se pustiesc din lăcomia celor mari.
 quote-author: Proverbele Românilor. Iuliu A. ZANNE
+images:
+  - "images/0.jpg"
 ---

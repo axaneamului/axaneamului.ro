@@ -13,4 +13,6 @@ day: vineri
 meta: Sf. Ap. Onisim; Sf. Mc. Maior; Sf. Cuv. Eusebiu
 quote: Țările se pustiesc din lăcomia celor mari.
 quote-author: Proverbele Românilor. Iuliu A. ZANNE
+images:
+  - "images/0.jpg"
 ---

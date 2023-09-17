@@ -8,20 +8,7 @@
   {{- $pages := . -}}
 
   {{- if .IsHome -}}
-    <!-- {{- with (index .Site.RegularPages 0) -}}{{ .Type }}{{- end -}} -->
-    <!-- {{- $pages = (.Paginate (where .Site.RegularPages "Type" "eq" "posts")).Pages -}}-->
-<!--     {{- $pages = (.Paginate (where .Data.Pages "Type" "posts")).Pages -}}-->
     {{- $pages = (.Paginate .Site.Pages).Pages -}}
-    <!--
-        {{- with (where .Data.Pages "Type" "posts") -}}
-        <p>{{ index . 0 }}</p>
-        {{ end }}
-    -->
-    <!--
-        {{ range (where .Site.RegularPages "Type" "eq" "posts") }}
-          <p>{{ .Title }}</p>
-        {{ end }}
-    -->
   {{- else if (eq .Type "authors") -}}
     {{- $pages = (where .Site.RegularPages "Type" "eq" "author") -}}
   {{- else -}}
@@ -36,28 +23,8 @@
     <article class="row card component magazine-image">
       <div class="card-body">
       <img class="img-fluid" alt="{{ .Title }}" src="{{ .Permalink }}/{{ index .Params.Images 0 }}" loading="lazy" />
-<!--
-      {{ if .Params.quote3 }}
-      <div class="alert-light" role="alert" style="margin-top: 1rem;">
-        {{.Params.quote3 | safeHTML }}
-      </div>
-      {{ end }}
--->
       </div>
     </article>
-<!--
-  <div class="magazine-image">
-    &lt;!&ndash;    TODO fix src &ndash;&gt;
-    <img class="img-fluid" alt="{{ .Title }}" src="{{ .Permalink }}/{{ index .Params.Images 0 }}" loading="lazy" />
-    &lt;!&ndash;
-    {{ if .Params.quote3 }}
-    <div class="alert alert-light" role="alert">
-      {{.Params.quote3 | safeHTML }}
-    </div>
-    {{ end }}
-    &ndash;&gt;
-  </div>
--->
   <br>
   {{ end }}
 

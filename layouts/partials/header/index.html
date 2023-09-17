@@ -11,15 +11,6 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
-<!--
-        {{- $logo := (default "images/logo.webp" .Site.Params.logo) -}}
-        <a class="navbar-brand me-3{{ if .IsHome }} active{{ end }}" href="{{ "" | absURL }}">
-          {{- if $logo -}}
-            {{ partial "helpers/image" (dict "filename" $logo "alt" "Logo" "class" "logo" "resources" .Resources) }}
-          {{- end -}}
-          {{ with .Site.Params.brand }}{{ . }}{{ else }}{{ $.Site.Title }}{{ end }}
-        </a>
--->
         {{ partial "header/social-share" . }}
         {{ partial "header/settings" . }}
         <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">

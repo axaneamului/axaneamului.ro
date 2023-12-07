@@ -28,7 +28,11 @@
   <br>
   {{ end }}
 
-  {{- range $pages -}}
+  {{- range (.Paginate $pages).Pages -}}
+    {{/*
+    <div>{{ .IsPage }}</div>
+    <div>{{ .Params }}</div>
+    */}}
     <article class="row card post component">
       {{- if and (default true $.Site.Params.pinned) .Params.pinned -}}
         {{- with .File.UniqueID -}}

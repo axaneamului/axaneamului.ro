@@ -6,7 +6,7 @@ menu:
     parent: "axa-anul-iii"
     name: "Axa 35"
     weight: 35
-magazine-magazine-year: III
+magazine-year: III
 magazine-number: 35
 date: 01-31 martie 2010
 day:

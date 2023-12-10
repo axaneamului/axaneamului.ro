@@ -6,7 +6,7 @@ menu:
     parent: "axa-anul-iii"
     name: "Axa 6"
     weight: 6
-magazine-magazine-year: I
+magazine-year: I
 magazine-number: 6
 date: vineri, 7 martie 2008
 day:

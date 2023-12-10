@@ -6,7 +6,7 @@ menu:
     parent: "axa-anul-iii"
     name: "Axa 40"
     weight: 40
-magazine-magazine-year: III
+magazine-year: III
 magazine-number: 40
 date: 01-15 iunie 2010
 day:

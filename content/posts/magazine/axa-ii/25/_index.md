@@ -6,7 +6,7 @@ menu:
     parent: "axa-anul-ii"
     name: "Axa 25"
     weight: 25
-magazine-magazine-year: II
+magazine-year: II
 magazine-number: 25
 date: 06-30 septembrie 2009
 day:

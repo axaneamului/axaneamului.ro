@@ -6,7 +6,7 @@ menu:
     parent: "axa-anul-ii"
     name: "Axa 17"
     weight: 17
-magazine-magazine-year: II
+magazine-year: II
 magazine-number: 17
 date: 16-31 mai 2009
 day:

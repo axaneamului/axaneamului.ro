@@ -13,4 +13,8 @@ day: vineri
 meta: Sfântul Ierarh Mărturisitor Mihail al Sinadei; Sfânta Mironosiță Maria lui Cleopa
 quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.
 quote-author: Mihai EMINESCU
+note: săptămânal de antipolitică și cultură
+issn: 1843-9179
+images:
+  - "images/0.jpg"
 ---

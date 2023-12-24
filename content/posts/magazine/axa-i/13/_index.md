@@ -16,4 +16,5 @@ quote-author: Proverbele Românilor. Iuliu A. ZANNE
 note: săptămânal de antipolitică și cultură
 issn: 1843-9179
 images:
+  - "images/0.jpg"
 ---

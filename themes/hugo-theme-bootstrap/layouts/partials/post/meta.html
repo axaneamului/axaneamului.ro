@@ -33,7 +33,7 @@
   <span class="post-taxonomies">
   {{- range $key, $value := .Site.Taxonomies -}}
     {{- range ($.GetTerms $key) -}}
-      {{- if not (or (eq .Type "year") (eq .Type "month")) -}}
+      {{- if not (or (eq .Type "year") (eq .Type "month") (eq .Type "author")) -}}
         <a href="{{ .Permalink }}" class="badge rounded-pill post-taxonomy">{{ .Name }}</a>
       {{- end -}}
     {{- end -}}

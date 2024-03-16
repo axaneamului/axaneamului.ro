@@ -270,3 +270,7 @@ p:first-child::first-line {
     border-color: #fff;
     text-align: left;
 }
+
+.axa-book {
+    border: 2px solid #555;
+}

@@ -274,3 +274,7 @@ p:first-child::first-line {
 .axa-book {
     border: 2px solid #555;
 }
+
+.post-content a {
+    text-decoration: underline;
+}

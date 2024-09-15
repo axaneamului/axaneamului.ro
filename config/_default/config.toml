@@ -9,7 +9,8 @@ defaultContentLanguage = "ro"
 disableLanguages = ["en", "fr", "zh-cn" ,"zh-tw"] # For disable one or more language
 
 # Pagination
-paginate = 10
+pagination.pagerSize = 10
+#paginate = 10
 # paginatePath = "page"
 
 # Disqus

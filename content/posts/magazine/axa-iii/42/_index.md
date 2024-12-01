@@ -8,7 +8,7 @@ menu:
     weight: 42
 magazine-year: III
 magazine-number: 42
-date: 16-30 iunie 2010
+date: 01-15 iunie 2010
 day:
 meta: '„Nimeni să nu ne stăpânească în credința noastră ortodoxă: nici un împărat, nici un ierarh, nici un mincinos sinod, nici altcineva, ci numai Unul Dumnezeu, care atât prin El cât și prin ucenicii Săi ne-a fost dat nouă.”'
 meta-author: Sfântul Marcu al Efesului

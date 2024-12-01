@@ -8,7 +8,7 @@ menu:
     weight: 22
 magazine-year: II
 magazine-number: 22
-date: 1-15 august 2009
+date: 01-15 august 2009
 day:
 meta: '„Nimeni să nu ne stăpânească în credința noastră ortodoxă: nici un împărat, nici un ierarh, nici un mincinos sinod, nici altcineva, ci numai Unul Dumnezeu, care atât prin El cât și prin ucenicii Săi ne-a fost dat nouă.”'
 meta-author: Sfântul Marcu al Efesului

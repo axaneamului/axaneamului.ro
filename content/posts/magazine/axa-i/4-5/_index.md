@@ -12,7 +12,7 @@ magazine-number: 4-5
 date: 2008-02-29T00:00:00Z
 day: vineri
 meta: † Cuvioșii Ioan Casian Românul și Gherman din Dobrogea
-quote: Țările se pustiesc din lăcomia celor mari.
+quote: țările se pustiesc din lăcomia celor mari.
 quote-author: Proverbele Românilor. Iuliu A. ZANNE
 images:
   - "images/0.jpg"

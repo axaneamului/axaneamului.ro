@@ -23,7 +23,7 @@ images:
   - "images/0.jpg"
     #Redacția:
     #Ciprian BOJAN - redactor, Marius CARAMAN - fotografii, Costin C. - consultant, Eleodorus ENĂCHESCU - redactor,
-    #Alina GLOD - secretar general de redacție, Grigore OPRIȚA - consultant, Dragoș NICU - redactor șef adjunct,
+    #Alina GLOD - secretar general de redacție, Grigore OPRIțA - consultant, Dragoș NICU - redactor șef adjunct,
     #Ștefan PLĂMĂDEALĂ - redactor, Ionuț RUSE - director difuzare,
     #Florin STUPARU - redactor șef, Șerban TEODORESCU - IT, Mugur VASILIU - director.
     #Puteți să vă procurați publicația AXA la numărul de telefon 0721.094.447 – Ionuț RUSE

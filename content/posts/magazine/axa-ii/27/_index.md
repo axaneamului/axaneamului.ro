@@ -8,8 +8,8 @@ menu:
     weight: 27
 magazine-year: II
 magazine-number: 27
-date: 16-31 octombrie 2009
-day:
+magazine-date: 16-31 octombrie 2009
+magazine-day: 
 meta: '„Nimeni să nu ne stăpânească în credința noastră ortodoxă: nici un împărat, nici un ierarh, nici un mincinos sinod, nici altcineva, ci numai Unul Dumnezeu, care atât prin El cât și prin ucenicii Săi ne-a fost dat nouă.”'
 meta-author: Sfântul Marcu al Efesului
 quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.

@@ -8,8 +8,8 @@ menu:
     weight: 12
 magazine-year: I
 magazine-number: 12
-date: 2008-05-23T00:00:00Z
-day: vineri
+magazine-date: 2008-05-23T00:00:00Z
+magazine-day:  vineri
 meta: Sfântul Ierarh Mărturisitor Mihail al Sinadei; Sfânta Mironosiță Maria lui Cleopa
 quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.
 quote-author: Mihai EMINESCU

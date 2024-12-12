@@ -8,8 +8,8 @@ menu:
     weight: 3
 magazine-year: I
 magazine-number: 3
-date: 2008-02-15T00:00:00Z
-day: vineri
+magazine-date: 2008-02-15T00:00:00Z
+magazine-day:  vineri
 meta: Sf. Ap. Onisim; Sf. Mc. Maior; Sf. Cuv. Eusebiu
 quote: țările se pustiesc din lăcomia celor mari.
 quote-author: Proverbele Românilor. Iuliu A. ZANNE

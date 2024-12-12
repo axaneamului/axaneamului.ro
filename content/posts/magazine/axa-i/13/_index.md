@@ -8,8 +8,8 @@ menu:
     weight: 13
 magazine-year: I
 magazine-number: 13
-date: 2008-05-30T00:00:00Z
-day: vineri
+magazine-date: 2008-05-30T00:00:00Z
+magazine-day:  vineri
 meta: Cuviosul Mărturisitor Isaac de la Mănăstirea Dalmat; Cuviosul Varlaam; Sfântul Mucenic Natalie
 quote: Fiecare cu năravul său, ca fiecare trup cu umbra sa.
 quote-author: Proverbele Românilor. Iuliu A. ZANNE

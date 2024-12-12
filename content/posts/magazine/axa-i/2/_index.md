@@ -9,8 +9,8 @@ menu:
 final: true
 magazine-year: I
 magazine-number: 2
-date: 2008-02-08T00:00:00Z
-day: vineri
+magazine-date: 2008-02-08T00:00:00Z
+magazine-day:  vineri
 meta: Sf. Mare Mc. Teodor Stratilat; Sf. Prooroc Zaharia; Sfintele surori Marta și Maria
 quote: țările se pustiesc din lăcomia celor mari.
 quote-author: Proverbele Românilor. Iuliu A. ZANNE

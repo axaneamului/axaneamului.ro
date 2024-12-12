@@ -1,10 +1,10 @@
 <section class="series-taxonomies row card component card-about">
   <div class="card-header">
     <h2 class="card-title">
-      <a href="{{ absURL "/about" }}">{{ .Site.Author.name }}</a>
+      <a href="{{ absURL "/about" }}">{{ .Site.Params.Author.name }}</a>
     </h2>
   </div>
   <div class="card-body">
-    <div class="profile-bio">{{ .Site.Author.bio }}</div>
+    <div class="profile-bio">{{ .Site.Params.Author.bio }}</div>
   </div>
 </section>

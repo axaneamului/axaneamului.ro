@@ -8,8 +8,8 @@ menu:
     weight: 1
 magazine-year: I
 magazine-number: 1
-date: 2008-02-01T00:00:00Z
-day: vineri
+magazine-date: 2008-02-01T00:00:00Z
+magazine-day:  vineri
 meta: Înainteprăznuirea Întâmpinării Domnului; Sf. Mc. Trifon; Sf. Mucenițe Perpetua și Felicitas
 quote: Moartea le închide gura la toți
 quote-author: Proverbele Românilor. Iuliu A. ZANNE

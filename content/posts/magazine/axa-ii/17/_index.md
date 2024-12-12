@@ -8,8 +8,8 @@ menu:
     weight: 17
 magazine-year: II
 magazine-number: 17
-date: 16-31 mai 2009
-day:
+magazine-date: 16-31 mai 2009
+magazine-day: 
 meta: Revista AXA ajunge la dumneavoastră exclusiv prin eforturile voluntare ale editorilor săi. Dacă publicația noastră v-a trezit interesul, puteți aduce o contribuție minimă la susținerea ei prin încheierea unui abonament.
 quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.
 quote-author: Mihai EMINESCU

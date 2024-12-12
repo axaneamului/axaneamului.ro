@@ -9,8 +9,8 @@ menu:
 final: true
 magazine-year: I
 magazine-number: 8
-date: 2008-04-04T00:00:00Z
-day: vineri
+magazine-date: 2008-04-04T00:00:00Z
+magazine-day:  vineri
 meta: Cuv. Iosif scriitorul-de-cântări; Cuv. Gheorghe de la Maleon; Sf. Ierarh Isidor de Sevilia
 quote: Nu te închina până nu știi cine-i sfântul.
 quote-author: Proverbele Românilor. Iuliu A. ZANNE

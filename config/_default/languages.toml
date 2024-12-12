@@ -5,6 +5,10 @@
     dateFormat = "02-01-2006"
     description = "AXA - Revistă de oceanografie ortodoxă "
     keywords = "Dumnezeu, Neam, Familie, România, AXA, Mihai Eminescu, Axa Neamului"
+    [ro.params.author]
+      name = "AXA"
+      email = "contact@axaneamului.ro"
+      bio = "Revistă de oceanografie ortodoxă "
     [ro.params.archive]
       dateFormat = "2 January"
 

@@ -8,8 +8,8 @@ menu:
     weight: 14
 magazine-year: II
 magazine-number: 14
-date: 2009-04-01T00:00:00Z
-day: miercuri
+magazine-date: 2009-04-01T00:00:00Z
+magazine-day:  miercuri
 meta:
 quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.
 quote-author: Mihai EMINESCU

@@ -8,8 +8,8 @@ menu:
     weight: 6
 magazine-year: I
 magazine-number: 6
-date: vineri, 7 martie 2008
-day:
+magazine-date: vineri, 7 martie 2008
+magazine-day: 
 meta: '„Nimeni să nu ne stăpânească în credința noastră ortodoxă: nici un împărat, nici un ierarh, nici un mincinos sinod, nici altcineva, ci numai Unul Dumnezeu, care atât prin El cât și prin ucenicii Săi ne-a fost dat nouă.”'
 meta-author: Sfântul Marcu al Efesului
 quote: Sau țara aceasta să fie în adevăr Românească, sau nici nu trebuie să fie.

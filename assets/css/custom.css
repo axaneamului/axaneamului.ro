@@ -254,6 +254,14 @@ p:first-child::first-line {
     text-indent: 1rem;
 }
 
+.axa-menu {
+    text-decoration: none !important;
+}
+
+.axa-menu:hover {
+    text-decoration: underline !important;
+}
+
 .quote3 strong {
     background-color: var(--hbs-secondary-text-on-surface);
     color: #fff;

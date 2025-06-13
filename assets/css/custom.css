@@ -254,11 +254,17 @@ p:first-child::first-line {
     text-indent: 1rem;
 }
 
-.axa-menu {
+.axa-menu,
+.axa-menu-def {
     text-decoration: none !important;
 }
 
-.axa-menu:hover {
+.axa-menu:target:before {
+    display: inherit !important;
+}
+
+.axa-menu:hover,
+.axa-menu-def:hover {
     text-decoration: underline !important;
 }
 

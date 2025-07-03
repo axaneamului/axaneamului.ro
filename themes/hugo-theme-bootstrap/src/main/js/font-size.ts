@@ -10,6 +10,7 @@ class FontSizeSwitcher {
     ['0', ''],
     ['1', 'lg'],
     ['2', 'xl'],
+    ['3', 'xxl'],
   ]);
 
   run() {

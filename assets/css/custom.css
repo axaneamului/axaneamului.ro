@@ -292,3 +292,11 @@ p:first-child::first-line {
 .post-content a {
     text-decoration: underline;
 }
+
+.font-size-xxl {
+    font-size: 1.5rem;
+}
+
+.font-size-xxxl {
+    font-size: 2rem;
+}

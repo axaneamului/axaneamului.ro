@@ -66,6 +66,6 @@
   </div>
   {{- partial "hooks/list-end" . -}}
   {{- if not (eq .Type "authors") -}}
-    {{- partial "pagination" . -}}
+    {{- partial "wrap-pagination" . -}}
   {{- end -}}
 </div>

@@ -300,3 +300,7 @@ p:first-child::first-line {
 .font-size-xxxl {
     font-size: 2rem;
 }
+
+.ul-dash {
+    list-style-type: '- ';
+}

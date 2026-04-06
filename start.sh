@@ -8,4 +8,4 @@
 
 clear
 rm -rf ./public
-hugo server -D --port=8891
+hugo server -D --port=2022

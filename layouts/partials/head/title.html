@@ -25,10 +25,6 @@
   {{- else -}}
     {{- $paginator = .Paginate .Pages.ByTitle (default 10 .Site.Params.taxonomyPaginate) -}}
   {{- end -}}
-{{- else if not (eq .Kind "page") -}}
-  <!--  {{- if ne .Type "archives" -}}-->
-  <!--  {{- end -}}-->
-  {{- $paginator = .Paginate .RegularPagesRecursive -}}
 {{- end -}}
 {{- if $paginator -}}
   {{- if gt $paginator.PageNumber 1 -}}

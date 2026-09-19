@@ -6,7 +6,7 @@
   {{- $allPosts := where .Site.RegularPages "Type" "in" $sections -}}
   {{- $allPosts = where $allPosts "IsPage" true -}}
   {{- $hidden_pages_1 := where $allPosts "Params.categories" "intersect" (slice "Poezie și proză") -}}
-  {{- $hidden_pages_2 := where $allPosts "Params.categories" "intersect" (slice "Social") -}}
+  {{- $hidden_pages_2 := where $allPosts "Params.categories" "intersect" (slice "SocialX") -}}
   {{- $pinnedPosts := slice -}}
   {{- if (default true $.Site.Params.pinnedPost) -}}
   {{- $pinnedPosts = first (default 1 $.Site.Params.pinnedPostCount) (where $allPosts ".Params.pinned" true) -}}

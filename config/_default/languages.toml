@@ -1,5 +1,5 @@
 [ro]
-  languageName = "Română"
+  label = "Română"
   weight = 1
   [ro.params]
     dateFormat = "02-01-2006"
@@ -13,11 +13,11 @@
       dateFormat = "2 January"
 
 [en]
-  languageName = "English"
+  label = "English"
   weight = 2
 
 [fr]
-  languageName = "Français"
+  label = "Français"
   weight = 3
   [fr.params]
     dateFormat = "02-01-2006"
@@ -25,7 +25,7 @@
     keywords = "Hugo, Bootstrap, Thème Blog"
 
 [zh-tw]
-  languageName = "繁體中文"
+  label = "繁體中文"
   weight = 4
   [zh-tw.params]
     dateFormat = "2006-01-02"
@@ -35,7 +35,7 @@
       dateFormat = "01-02"
 
 [zh-cn]
-  languageName = "简体中文"
+  label = "简体中文"
   weight = 5
   [zh-cn.params]
     dateFormat = "2006-01-02"

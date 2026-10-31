@@ -1,5 +1,5 @@
 {{- $author_key := path.Base .File.Dir -}}
-{{- $author_val := index $.Site.Data.authors $author_key -}}
+{{- $author_val := index hugo.Data.authors $author_key -}}
 {{- $photo := "images/0.jpg" -}}
 {{- $photo = printf "%s%s" .File.Dir $photo -}}
 

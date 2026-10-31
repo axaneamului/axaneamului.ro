@@ -1,6 +1,6 @@
 {{- define "content" -}}
 {{- $pageTitle := .Title -}}
-{{- $data := index .Site.Data .Site.Language.Lang -}}
+{{- $data := index hugo.Data .Site.Language.Lang -}}
 {{- with $data -}}
 {{- $faq := sort .faq "weight" -}}
 <div class="faq-container col component card">

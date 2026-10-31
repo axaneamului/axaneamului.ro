@@ -2,7 +2,7 @@
   {{- partial "post/panel" . -}}
   <div class="card-header ">
     {{ $author_key := path.Base .File.Dir }}
-    <h1 class="card-title post-title">{{ index $.Site.Data.authors $author_key }}</h1>
+    <h1 class="card-title post-title">{{ index hugo.Data.authors $author_key }}</h1>
   </div>
   <div class="card-body">
     {{- partial "author/meta" . -}}

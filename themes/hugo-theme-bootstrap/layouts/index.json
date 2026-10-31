@@ -4,7 +4,7 @@
     {{- $date := .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
     {{- $title := .Title }}
     {{- $author_key := (index .Params.Authors 0) -}}
-    {{- $author_val := index $.Site.Data.authors $author_key -}}
+    {{- $author_val := index hugo.Data.authors $author_key -}}
     {{- $authors := .Params.Authors }}
     {{- if $titleCase -}}
         {{- $title = title $title -}}

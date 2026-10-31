@@ -10,7 +10,7 @@
             <h2 class="taxonomy-title card-title">
               {{- if eq .Type "author" -}}
                 {{- $author_key := path.Base .File.Dir -}}
-                {{- $author_val := index $.Site.Data.authors $author_key -}}
+                {{- $author_val := index hugo.Data.authors $author_key -}}
                 <a href="{{ .Page.Permalink }}">{{ $author_val }}</a>
               {{- else -}}
                 <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>

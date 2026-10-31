@@ -1,6 +1,6 @@
 {{- if and (default true .Site.Params.breadcrumb) (default true .Params.breadcrumb) -}}
   {{- $titleCase := default false $.Site.Params.titleCase -}}
-  {{- $i18nAuthors := $.Site.Data.authors -}}
+  {{- $i18nAuthors := hugo.Data.authors -}}
   <nav class="row card component" aria-label="breadcrumb">
     <div class="card-body">
       <ol class="breadcrumb ">

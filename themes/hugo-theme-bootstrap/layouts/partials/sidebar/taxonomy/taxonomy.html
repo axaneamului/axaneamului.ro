@@ -21,7 +21,7 @@
           {{- if lt $idx $taxonomyCount -}}
             <a href="{{ $taxonomy.Page.Permalink }}" class="badge rounded post-taxonomy" title="{{ $taxonomy.Page.Title }}">
             {{- if eq $taxonomy.Page.Type "author" -}}
-              {{ index $.Site.Data.authors $taxonomy.Term }}
+              {{ index hugo.Data.authors $taxonomy.Term }}
             {{- else -}}
               {{ $taxonomy.Page.Title }}
             {{- end -}}

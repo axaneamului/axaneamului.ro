@@ -9,7 +9,7 @@
     "articleSection": "{{ .Section }}",
     "name": "{{ .Title }}",
     "headline": "{{ .Title }}",
-    "description": "{{ if .Description }}{{ replace (.Description | markdownify) "\n" " " }}{{ else }}{{if .IsPage}}{{ replace (.Summary | markdownify) "\n" " " }}{{ end }}{{ end }}",
+    "description": "{{ if .Description }}{{ replace (.Description | markdownify) "\n" " " }}{{ else if .IsPage }}{{ replace ((.Summary | default .Title) | plainify) "\n" " " }}{{ end }}",
     "inLanguage": "en-US",
     "author": "axa",
     "creator": "axa",

@@ -8,4 +8,5 @@
 
 clear
 rm -rf ./public
-hugo server -D --port=2022
+hugo server -D --buildFuture --port=2022
+#hugo server -D --buildFuture --port=2022 --panicOnWarning
